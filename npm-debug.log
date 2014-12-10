@@ -1,0 +1,2124 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'can-compile', '-g' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose cache add [ 'can-compile', null ]
+5 verbose cache add name=undefined spec="can-compile" args=["can-compile",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'can-compile',
+6 verbose parsed url   path: 'can-compile',
+6 verbose parsed url   href: 'can-compile' }
+7 silly lockFile a8d28a88-can-compile can-compile
+8 verbose lock can-compile /Users/laurahartney/.npm/a8d28a88-can-compile.lock
+9 silly lockFile a8d28a88-can-compile can-compile
+10 silly lockFile a8d28a88-can-compile can-compile
+11 verbose addNamed [ 'can-compile', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile fb42f5b9-can-compile can-compile@
+14 verbose lock can-compile@ /Users/laurahartney/.npm/fb42f5b9-can-compile.lock
+15 silly addNameRange { name: 'can-compile', range: '*', hasData: false }
+16 verbose registry.get can-compile not expired, no request
+17 silly addNameRange number 2 { name: 'can-compile', range: '*', hasData: true }
+18 silly addNameRange versions [ 'can-compile',
+18 silly addNameRange   [ '0.1.0',
+18 silly addNameRange     '0.2.0',
+18 silly addNameRange     '0.2.1',
+18 silly addNameRange     '0.3.0',
+18 silly addNameRange     '0.3.1',
+18 silly addNameRange     '0.3.2',
+18 silly addNameRange     '0.4.0',
+18 silly addNameRange     '0.4.1',
+18 silly addNameRange     '0.5.0',
+18 silly addNameRange     '0.6.0',
+18 silly addNameRange     '0.7.0',
+18 silly addNameRange     '0.7.1' ] ]
+19 verbose addNamed [ 'can-compile', '0.7.1' ]
+20 verbose addNamed [ '0.7.1', '0.7.1' ]
+21 silly lockFile b9b2b612-can-compile-0-7-1 can-compile@0.7.1
+22 verbose lock can-compile@0.7.1 /Users/laurahartney/.npm/b9b2b612-can-compile-0-7-1.lock
+23 silly lockFile b9b2b612-can-compile-0-7-1 can-compile@0.7.1
+24 silly lockFile b9b2b612-can-compile-0-7-1 can-compile@0.7.1
+25 silly lockFile fb42f5b9-can-compile can-compile@
+26 silly lockFile fb42f5b9-can-compile can-compile@
+27 silly resolved [ { name: 'can-compile',
+27 silly resolved     description: 'Compile CanJS Mustache and EJS views for lightning fast production apps',
+27 silly resolved     version: '0.7.1',
+27 silly resolved     homepage: 'http://daffl.github.com/can-compile',
+27 silly resolved     author:
+27 silly resolved      { name: 'David Luecke',
+27 silly resolved        email: 'daff@neyeon.com',
+27 silly resolved        url: 'http://daffl.github.com' },
+27 silly resolved     main: 'lib/index.js',
+27 silly resolved     scripts: { test: 'grunt test' },
+27 silly resolved     engines: { node: '~0.10' },
+27 silly resolved     repository: { type: 'git', url: 'git@github.com:daffl/can-compile.git' },
+27 silly resolved     bin: { 'can-compile': './bin/can-compile' },
+27 silly resolved     keywords: [ 'gruntplugin', 'canjs' ],
+27 silly resolved     devDependencies:
+27 silly resolved      { 'expect.js': '>= 0.1.2',
+27 silly resolved        mocha: '1.8.1',
+27 silly resolved        grunt: '~ 0.4.0',
+27 silly resolved        'grunt-cli': '~0.1.9',
+27 silly resolved        'grunt-contrib-jshint': '>= 0.1.1',
+27 silly resolved        'grunt-release': '~0.5.1',
+27 silly resolved        'grunt-simple-mocha': '~0.4.0' },
+27 silly resolved     dependencies:
+27 silly resolved      { commander: '1.1.1',
+27 silly resolved        async: '0.1.22',
+27 silly resolved        jsdom: '~0.5.6',
+27 silly resolved        handlebars: '~1.0.12',
+27 silly resolved        glob: '~3.2.8' },
+27 silly resolved     peerDependencies: { grunt: '~0.4.0' },
+27 silly resolved     gitHead: '9d3ce952509d364a367d8e5a2105580eb7b07537',
+27 silly resolved     bugs: { url: 'https://github.com/daffl/can-compile/issues' },
+27 silly resolved     _id: 'can-compile@0.7.1',
+27 silly resolved     _shasum: '2ec9e95bf3a1e6a80469a64eee46de6aca6dc215',
+27 silly resolved     _from: 'can-compile@',
+27 silly resolved     _npmVersion: '2.1.6',
+27 silly resolved     _nodeVersion: '0.10.32',
+27 silly resolved     _npmUser: { name: 'daffl', email: 'daff@neyeon.de' },
+27 silly resolved     maintainers: [ [Object] ],
+27 silly resolved     dist:
+27 silly resolved      { shasum: '2ec9e95bf3a1e6a80469a64eee46de6aca6dc215',
+27 silly resolved        tarball: 'http://registry.npmjs.org/can-compile/-/can-compile-0.7.1.tgz' },
+27 silly resolved     directories: {},
+27 silly resolved     _resolved: 'https://registry.npmjs.org/can-compile/-/can-compile-0.7.1.tgz',
+27 silly resolved     readme: 'ERROR: No README data found!' } ]
+28 info install can-compile@0.7.1 into /usr/local/lib
+29 info installOne can-compile@0.7.1
+30 info /usr/local/lib/node_modules/can-compile unbuild
+31 verbose tar unpack /Users/laurahartney/.npm/can-compile/0.7.1/package.tgz
+32 silly lockFile 17aa87ce-cal-lib-node-modules-can-compile tar:///usr/local/lib/node_modules/can-compile
+33 verbose lock tar:///usr/local/lib/node_modules/can-compile /Users/laurahartney/.npm/17aa87ce-cal-lib-node-modules-can-compile.lock
+34 silly lockFile fd752493-pm-can-compile-0-7-1-package-tgz tar:///Users/laurahartney/.npm/can-compile/0.7.1/package.tgz
+35 verbose lock tar:///Users/laurahartney/.npm/can-compile/0.7.1/package.tgz /Users/laurahartney/.npm/fd752493-pm-can-compile-0-7-1-package-tgz.lock
+36 silly gunzTarPerm modes [ '755', '644' ]
+37 silly gunzTarPerm extractEntry package.json
+38 silly gunzTarPerm extractEntry .npmignore
+39 silly gunzTarPerm extractEntry Gruntfile.js
+40 silly gunzTarPerm extractEntry gulp.js
+41 silly gunzTarPerm extractEntry example/package.json
+42 silly gunzTarPerm extractEntry example/Gruntfile.js
+43 silly gunzTarPerm extractEntry example/bower_components/canjs/can.map.delegate.js
+44 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.map.delegate.js',
+44 silly gunzTarPerm   436,
+44 silly gunzTarPerm   420 ]
+45 silly gunzTarPerm extractEntry example/bower_components/canjs/can.map.attributes.js
+46 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.map.attributes.js',
+46 silly gunzTarPerm   436,
+46 silly gunzTarPerm   420 ]
+47 silly gunzTarPerm extractEntry example/bower_components/canjs/can.map.backup.js
+48 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.map.backup.js', 436, 420 ]
+49 silly gunzTarPerm extractEntry example/bower_components/canjs/can.map.define.js
+50 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.map.define.js', 436, 420 ]
+51 silly gunzTarPerm extractEntry example/bower_components/canjs/can.list.sort.js
+52 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.list.sort.js', 436, 420 ]
+53 silly gunzTarPerm extractEntry example/bower_components/canjs/can.map.list.js
+54 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.map.list.js', 436, 420 ]
+55 silly gunzTarPerm extractEntry example/bower_components/canjs/can.map.setter.js
+56 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.map.setter.js', 436, 420 ]
+57 silly gunzTarPerm extractEntry example/bower_components/canjs/can.map.validations.js
+58 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.map.validations.js',
+58 silly gunzTarPerm   436,
+58 silly gunzTarPerm   420 ]
+59 silly gunzTarPerm extractEntry example/bower_components/canjs/can.model.queue.js
+60 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.model.queue.js', 436, 420 ]
+61 silly gunzTarPerm extractEntry example/bower_components/canjs/can.mootools.dev.js
+62 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.mootools.dev.js',
+62 silly gunzTarPerm   436,
+62 silly gunzTarPerm   420 ]
+63 silly gunzTarPerm extractEntry example/bower_components/canjs/can.list.promise.js
+64 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.list.promise.js',
+64 silly gunzTarPerm   436,
+64 silly gunzTarPerm   420 ]
+65 silly gunzTarPerm extractEntry example/bower_components/canjs/can.mootools.js
+66 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.mootools.js', 436, 420 ]
+67 silly gunzTarPerm extractEntry example/bower_components/canjs/can.jquery.min.js
+68 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.jquery.min.js', 436, 420 ]
+69 silly gunzTarPerm extractEntry example/bower_components/canjs/can.mootools.min.js
+70 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.mootools.min.js',
+70 silly gunzTarPerm   436,
+70 silly gunzTarPerm   420 ]
+71 silly gunzTarPerm extractEntry example/bower_components/canjs/can.jquery.js
+72 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.jquery.js', 436, 420 ]
+73 silly gunzTarPerm extractEntry example/bower_components/canjs/can.object.js
+74 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.object.js', 436, 420 ]
+75 silly gunzTarPerm extractEntry example/bower_components/canjs/can.jquery.dev.js
+76 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.jquery.dev.js', 436, 420 ]
+77 silly gunzTarPerm extractEntry example/bower_components/canjs/can.route.pushstate.js
+78 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.route.pushstate.js',
+78 silly gunzTarPerm   436,
+78 silly gunzTarPerm   420 ]
+79 silly gunzTarPerm extractEntry example/bower_components/canjs/can.fixture.js
+80 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.fixture.js', 436, 420 ]
+81 silly gunzTarPerm extractEntry example/bower_components/canjs/can.stache.js
+82 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.stache.js', 436, 420 ]
+83 silly gunzTarPerm extractEntry example/bower_components/canjs/can.ejs.js
+84 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.ejs.js', 436, 420 ]
+85 silly gunzTarPerm extractEntry example/bower_components/canjs/can.view.modifiers.js
+86 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.view.modifiers.js',
+86 silly gunzTarPerm   436,
+86 silly gunzTarPerm   420 ]
+87 silly gunzTarPerm extractEntry example/bower_components/canjs/can.dojo.min.js
+88 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.dojo.min.js', 436, 420 ]
+89 silly gunzTarPerm extractEntry example/bower_components/canjs/can.yui.dev.js
+90 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.yui.dev.js', 436, 420 ]
+91 silly gunzTarPerm extractEntry example/bower_components/canjs/can.dojo.js
+92 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.dojo.js', 436, 420 ]
+93 silly gunzTarPerm extractEntry example/bower_components/canjs/can.yui.js
+94 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.yui.js', 436, 420 ]
+95 silly gunzTarPerm extractEntry example/bower_components/canjs/can.dojo.dev.js
+96 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.dojo.dev.js', 436, 420 ]
+97 silly gunzTarPerm extractEntry example/bower_components/canjs/can.yui.min.js
+98 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.yui.min.js', 436, 420 ]
+99 silly gunzTarPerm extractEntry example/bower_components/canjs/can.control.plugin.js
+100 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.control.plugin.js',
+100 silly gunzTarPerm   436,
+100 silly gunzTarPerm   420 ]
+101 silly gunzTarPerm extractEntry example/bower_components/canjs/can.zepto.dev.js
+102 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.zepto.dev.js', 436, 420 ]
+103 silly gunzTarPerm extractEntry example/bower_components/canjs/can.construct.super.js
+104 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.construct.super.js',
+104 silly gunzTarPerm   436,
+104 silly gunzTarPerm   420 ]
+105 silly gunzTarPerm extractEntry example/bower_components/canjs/can.zepto.js
+106 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.zepto.js', 436, 420 ]
+107 silly gunzTarPerm extractEntry example/bower_components/canjs/can.construct.proxy.js
+108 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.construct.proxy.js',
+108 silly gunzTarPerm   436,
+108 silly gunzTarPerm   420 ]
+109 silly gunzTarPerm extractEntry example/bower_components/canjs/can.zepto.min.js
+110 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.zepto.min.js', 436, 420 ]
+111 silly gunzTarPerm extractEntry example/bower_components/canjs/can.map.lazy.js
+112 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/can.map.lazy.js', 436, 420 ]
+113 silly gunzTarPerm extractEntry example/bower_components/canjs/.bower.json
+114 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can.js
+115 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can.js', 436, 420 ]
+116 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/component.js
+117 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/component.js',
+117 silly gunzTarPerm   436,
+117 silly gunzTarPerm   420 ]
+118 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/route.js
+119 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/route.js', 436, 420 ]
+120 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/construct.js
+121 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/construct.js',
+121 silly gunzTarPerm   436,
+121 silly gunzTarPerm   420 ]
+122 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/observe.js
+123 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/observe.js', 436, 420 ]
+124 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/control.js
+125 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/control.js', 436, 420 ]
+126 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/event.js
+127 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/event.js', 436, 420 ]
+128 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/model.js
+129 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/model.js', 436, 420 ]
+130 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/list.js
+131 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/list.js', 436, 420 ]
+132 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/compute.js
+133 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/compute.js', 436, 420 ]
+134 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map.js
+135 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map.js', 436, 420 ]
+136 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view.js
+137 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view.js', 436, 420 ]
+138 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/model/queue.js
+139 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/model/queue.js',
+139 silly gunzTarPerm   436,
+139 silly gunzTarPerm   420 ]
+140 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/list/promise.js
+141 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/list/promise.js',
+141 silly gunzTarPerm   436,
+141 silly gunzTarPerm   420 ]
+142 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/control/plugin.js
+143 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/control/plugin.js',
+143 silly gunzTarPerm   436,
+143 silly gunzTarPerm   420 ]
+144 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/control/route.js
+145 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/control/route.js',
+145 silly gunzTarPerm   436,
+145 silly gunzTarPerm   420 ]
+146 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/route/pushstate.js
+147 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/route/pushstate.js',
+147 silly gunzTarPerm   436,
+147 silly gunzTarPerm   420 ]
+148 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/construct/proxy.js
+149 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/construct/proxy.js',
+149 silly gunzTarPerm   436,
+149 silly gunzTarPerm   420 ]
+150 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/construct/super.js
+151 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/construct/super.js',
+151 silly gunzTarPerm   436,
+151 silly gunzTarPerm   420 ]
+152 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/zepto.js
+153 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/zepto.js',
+153 silly gunzTarPerm   436,
+153 silly gunzTarPerm   420 ]
+154 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/deferred.js
+155 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/deferred.js',
+155 silly gunzTarPerm   436,
+155 silly gunzTarPerm   420 ]
+156 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/dojo.js
+157 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/dojo.js',
+157 silly gunzTarPerm   436,
+157 silly gunzTarPerm   420 ]
+158 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/fixture.js
+159 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/fixture.js',
+159 silly gunzTarPerm   436,
+159 silly gunzTarPerm   420 ]
+160 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/fragment.js
+161 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/fragment.js',
+161 silly gunzTarPerm   436,
+161 silly gunzTarPerm   420 ]
+162 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/can.js
+163 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/can.js',
+163 silly gunzTarPerm   436,
+163 silly gunzTarPerm   420 ]
+164 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/attr.js
+165 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/attr.js',
+165 silly gunzTarPerm   436,
+165 silly gunzTarPerm   420 ]
+166 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/jquery.js
+167 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/jquery.js',
+167 silly gunzTarPerm   436,
+167 silly gunzTarPerm   420 ]
+168 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/library.js
+169 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/library.js',
+169 silly gunzTarPerm   436,
+169 silly gunzTarPerm   420 ]
+170 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/mootools.js
+171 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/mootools.js',
+171 silly gunzTarPerm   436,
+171 silly gunzTarPerm   420 ]
+172 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/yui.js
+173 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/yui.js',
+173 silly gunzTarPerm   436,
+173 silly gunzTarPerm   420 ]
+174 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/bind.js
+175 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/bind.js',
+175 silly gunzTarPerm   436,
+175 silly gunzTarPerm   420 ]
+176 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/object.js
+177 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/object.js',
+177 silly gunzTarPerm   436,
+177 silly gunzTarPerm   420 ]
+178 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/batch.js
+179 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/batch.js',
+179 silly gunzTarPerm   436,
+179 silly gunzTarPerm   420 ]
+180 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/string.js
+181 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/string.js',
+181 silly gunzTarPerm   436,
+181 silly gunzTarPerm   420 ]
+182 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/hashchange.js
+183 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/hashchange.js',
+183 silly gunzTarPerm   436,
+183 silly gunzTarPerm   420 ]
+184 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/inserted.js
+185 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/inserted.js',
+185 silly gunzTarPerm   436,
+185 silly gunzTarPerm   420 ]
+186 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/string/deparam.js
+187 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/string/deparam.js',
+187 silly gunzTarPerm   436,
+187 silly gunzTarPerm   420 ]
+188 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/object/isplain.js
+189 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/object/isplain.js',
+189 silly gunzTarPerm   436,
+189 silly gunzTarPerm   420 ]
+190 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/util/array/each.js
+191 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/util/array/each.js',
+191 silly gunzTarPerm   436,
+191 silly gunzTarPerm   420 ]
+192 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/bindings.js
+193 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/bindings.js',
+193 silly gunzTarPerm   436,
+193 silly gunzTarPerm   420 ]
+194 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/elements.js
+195 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/elements.js',
+195 silly gunzTarPerm   436,
+195 silly gunzTarPerm   420 ]
+196 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/live.js
+197 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/live.js',
+197 silly gunzTarPerm   436,
+197 silly gunzTarPerm   420 ]
+198 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/modifiers.js
+199 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/modifiers.js',
+199 silly gunzTarPerm   436,
+199 silly gunzTarPerm   420 ]
+200 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/mustache.js
+201 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/mustache.js',
+201 silly gunzTarPerm   436,
+201 silly gunzTarPerm   420 ]
+202 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/ejs.js
+203 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/ejs.js',
+203 silly gunzTarPerm   436,
+203 silly gunzTarPerm   420 ]
+204 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/parser.js
+205 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/parser.js',
+205 silly gunzTarPerm   436,
+205 silly gunzTarPerm   420 ]
+206 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/render.js
+207 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/render.js',
+207 silly gunzTarPerm   436,
+207 silly gunzTarPerm   420 ]
+208 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/scanner.js
+209 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/scanner.js',
+209 silly gunzTarPerm   436,
+209 silly gunzTarPerm   420 ]
+210 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/scope.js
+211 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/scope.js',
+211 silly gunzTarPerm   436,
+211 silly gunzTarPerm   420 ]
+212 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/stache.js
+213 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/stache.js',
+213 silly gunzTarPerm   436,
+213 silly gunzTarPerm   420 ]
+214 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/callbacks.js
+215 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/callbacks.js',
+215 silly gunzTarPerm   436,
+215 silly gunzTarPerm   420 ]
+216 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/target.js
+217 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/target.js',
+217 silly gunzTarPerm   436,
+217 silly gunzTarPerm   420 ]
+218 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/node_lists.js
+219 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/node_lists.js',
+219 silly gunzTarPerm   436,
+219 silly gunzTarPerm   420 ]
+220 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/stache/html_section.js
+221 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/stache/html_section.js',
+221 silly gunzTarPerm   436,
+221 silly gunzTarPerm   420 ]
+222 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/stache/mustache_core.js
+223 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/stache/mustache_core.js',
+223 silly gunzTarPerm   436,
+223 silly gunzTarPerm   420 ]
+224 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/stache/mustache_helpers.js
+225 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/stache/mustache_helpers.js',
+225 silly gunzTarPerm   436,
+225 silly gunzTarPerm   420 ]
+226 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/stache/text_section.js
+227 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/stache/text_section.js',
+227 silly gunzTarPerm   436,
+227 silly gunzTarPerm   420 ]
+228 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/view/stache/utils.js
+229 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/view/stache/utils.js',
+229 silly gunzTarPerm   436,
+229 silly gunzTarPerm   420 ]
+230 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/attributes.js
+231 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/attributes.js',
+231 silly gunzTarPerm   436,
+231 silly gunzTarPerm   420 ]
+232 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/bubble.js
+233 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/bubble.js',
+233 silly gunzTarPerm   436,
+233 silly gunzTarPerm   420 ]
+234 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/define.js
+235 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/define.js',
+235 silly gunzTarPerm   436,
+235 silly gunzTarPerm   420 ]
+236 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/delegate.js
+237 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/delegate.js',
+237 silly gunzTarPerm   436,
+237 silly gunzTarPerm   420 ]
+238 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/backup.js
+239 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/backup.js',
+239 silly gunzTarPerm   436,
+239 silly gunzTarPerm   420 ]
+240 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/lazy.js
+241 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/lazy.js',
+241 silly gunzTarPerm   436,
+241 silly gunzTarPerm   420 ]
+242 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/list.js
+243 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/list.js',
+243 silly gunzTarPerm   436,
+243 silly gunzTarPerm   420 ]
+244 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/setter.js
+245 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/setter.js',
+245 silly gunzTarPerm   436,
+245 silly gunzTarPerm   420 ]
+246 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/sort.js
+247 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/sort.js',
+247 silly gunzTarPerm   436,
+247 silly gunzTarPerm   420 ]
+248 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/validations.js
+249 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/validations.js',
+249 silly gunzTarPerm   436,
+249 silly gunzTarPerm   420 ]
+250 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/lazy/bubble.js
+251 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/lazy/bubble.js',
+251 silly gunzTarPerm   436,
+251 silly gunzTarPerm   420 ]
+252 silly gunzTarPerm extractEntry example/bower_components/canjs/amd/can/map/lazy/nested_reference.js
+253 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd/can/map/lazy/nested_reference.js',
+253 silly gunzTarPerm   436,
+253 silly gunzTarPerm   420 ]
+254 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can.js
+255 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can.js', 436, 420 ]
+256 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/component.js
+257 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/component.js',
+257 silly gunzTarPerm   436,
+257 silly gunzTarPerm   420 ]
+258 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/route.js
+259 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/route.js',
+259 silly gunzTarPerm   436,
+259 silly gunzTarPerm   420 ]
+260 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/construct.js
+261 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/construct.js',
+261 silly gunzTarPerm   436,
+261 silly gunzTarPerm   420 ]
+262 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/observe.js
+263 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/observe.js',
+263 silly gunzTarPerm   436,
+263 silly gunzTarPerm   420 ]
+264 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/control.js
+265 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/control.js',
+265 silly gunzTarPerm   436,
+265 silly gunzTarPerm   420 ]
+266 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/event.js
+267 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/event.js',
+267 silly gunzTarPerm   436,
+267 silly gunzTarPerm   420 ]
+268 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/model.js
+269 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/model.js',
+269 silly gunzTarPerm   436,
+269 silly gunzTarPerm   420 ]
+270 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/list.js
+271 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/list.js',
+271 silly gunzTarPerm   436,
+271 silly gunzTarPerm   420 ]
+272 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/compute.js
+273 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/compute.js',
+273 silly gunzTarPerm   436,
+273 silly gunzTarPerm   420 ]
+274 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map.js
+275 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map.js', 436, 420 ]
+276 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view.js
+277 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view.js',
+277 silly gunzTarPerm   436,
+277 silly gunzTarPerm   420 ]
+278 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/model/queue.js
+279 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/model/queue.js',
+279 silly gunzTarPerm   436,
+279 silly gunzTarPerm   420 ]
+280 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/list/promise.js
+281 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/list/promise.js',
+281 silly gunzTarPerm   436,
+281 silly gunzTarPerm   420 ]
+282 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/control/plugin.js
+283 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/control/plugin.js',
+283 silly gunzTarPerm   436,
+283 silly gunzTarPerm   420 ]
+284 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/control/route.js
+285 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/control/route.js',
+285 silly gunzTarPerm   436,
+285 silly gunzTarPerm   420 ]
+286 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/route/pushstate.js
+287 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/route/pushstate.js',
+287 silly gunzTarPerm   436,
+287 silly gunzTarPerm   420 ]
+288 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/construct/proxy.js
+289 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/construct/proxy.js',
+289 silly gunzTarPerm   436,
+289 silly gunzTarPerm   420 ]
+290 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/construct/super.js
+291 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/construct/super.js',
+291 silly gunzTarPerm   436,
+291 silly gunzTarPerm   420 ]
+292 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/zepto.js
+293 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/zepto.js',
+293 silly gunzTarPerm   436,
+293 silly gunzTarPerm   420 ]
+294 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/deferred.js
+295 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/deferred.js',
+295 silly gunzTarPerm   436,
+295 silly gunzTarPerm   420 ]
+296 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/dojo.js
+297 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/dojo.js',
+297 silly gunzTarPerm   436,
+297 silly gunzTarPerm   420 ]
+298 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/fixture.js
+299 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/fixture.js',
+299 silly gunzTarPerm   436,
+299 silly gunzTarPerm   420 ]
+300 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/fragment.js
+301 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/fragment.js',
+301 silly gunzTarPerm   436,
+301 silly gunzTarPerm   420 ]
+302 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/can.js
+303 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/can.js',
+303 silly gunzTarPerm   436,
+303 silly gunzTarPerm   420 ]
+304 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/attr.js
+305 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/attr.js',
+305 silly gunzTarPerm   436,
+305 silly gunzTarPerm   420 ]
+306 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/jquery.js
+307 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/jquery.js',
+307 silly gunzTarPerm   436,
+307 silly gunzTarPerm   420 ]
+308 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/library.js
+309 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/library.js',
+309 silly gunzTarPerm   436,
+309 silly gunzTarPerm   420 ]
+310 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/mootools.js
+311 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/mootools.js',
+311 silly gunzTarPerm   436,
+311 silly gunzTarPerm   420 ]
+312 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/yui.js
+313 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/yui.js',
+313 silly gunzTarPerm   436,
+313 silly gunzTarPerm   420 ]
+314 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/bind.js
+315 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/bind.js',
+315 silly gunzTarPerm   436,
+315 silly gunzTarPerm   420 ]
+316 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/object.js
+317 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/object.js',
+317 silly gunzTarPerm   436,
+317 silly gunzTarPerm   420 ]
+318 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/batch.js
+319 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/batch.js',
+319 silly gunzTarPerm   436,
+319 silly gunzTarPerm   420 ]
+320 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/string.js
+321 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/string.js',
+321 silly gunzTarPerm   436,
+321 silly gunzTarPerm   420 ]
+322 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/hashchange.js
+323 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/hashchange.js',
+323 silly gunzTarPerm   436,
+323 silly gunzTarPerm   420 ]
+324 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/inserted.js
+325 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/inserted.js',
+325 silly gunzTarPerm   436,
+325 silly gunzTarPerm   420 ]
+326 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/string/deparam.js
+327 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/string/deparam.js',
+327 silly gunzTarPerm   436,
+327 silly gunzTarPerm   420 ]
+328 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/object/isplain.js
+329 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/object/isplain.js',
+329 silly gunzTarPerm   436,
+329 silly gunzTarPerm   420 ]
+330 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/util/array/each.js
+331 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/util/array/each.js',
+331 silly gunzTarPerm   436,
+331 silly gunzTarPerm   420 ]
+332 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/bindings.js
+333 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/bindings.js',
+333 silly gunzTarPerm   436,
+333 silly gunzTarPerm   420 ]
+334 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/elements.js
+335 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/elements.js',
+335 silly gunzTarPerm   436,
+335 silly gunzTarPerm   420 ]
+336 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/live.js
+337 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/live.js',
+337 silly gunzTarPerm   436,
+337 silly gunzTarPerm   420 ]
+338 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/modifiers.js
+339 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/modifiers.js',
+339 silly gunzTarPerm   436,
+339 silly gunzTarPerm   420 ]
+340 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/mustache.js
+341 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/mustache.js',
+341 silly gunzTarPerm   436,
+341 silly gunzTarPerm   420 ]
+342 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/ejs.js
+343 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/ejs.js',
+343 silly gunzTarPerm   436,
+343 silly gunzTarPerm   420 ]
+344 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/parser.js
+345 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/parser.js',
+345 silly gunzTarPerm   436,
+345 silly gunzTarPerm   420 ]
+346 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/render.js
+347 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/render.js',
+347 silly gunzTarPerm   436,
+347 silly gunzTarPerm   420 ]
+348 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/scanner.js
+349 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/scanner.js',
+349 silly gunzTarPerm   436,
+349 silly gunzTarPerm   420 ]
+350 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/scope.js
+351 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/scope.js',
+351 silly gunzTarPerm   436,
+351 silly gunzTarPerm   420 ]
+352 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/stache.js
+353 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/stache.js',
+353 silly gunzTarPerm   436,
+353 silly gunzTarPerm   420 ]
+354 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/callbacks.js
+355 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/callbacks.js',
+355 silly gunzTarPerm   436,
+355 silly gunzTarPerm   420 ]
+356 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/target.js
+357 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/target.js',
+357 silly gunzTarPerm   436,
+357 silly gunzTarPerm   420 ]
+358 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/node_lists.js
+359 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/node_lists.js',
+359 silly gunzTarPerm   436,
+359 silly gunzTarPerm   420 ]
+360 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/stache/html_section.js
+361 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/stache/html_section.js',
+361 silly gunzTarPerm   436,
+361 silly gunzTarPerm   420 ]
+362 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/stache/mustache_core.js
+363 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/stache/mustache_core.js',
+363 silly gunzTarPerm   436,
+363 silly gunzTarPerm   420 ]
+364 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/stache/mustache_helpers.js
+365 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/stache/mustache_helpers.js',
+365 silly gunzTarPerm   436,
+365 silly gunzTarPerm   420 ]
+366 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/stache/text_section.js
+367 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/stache/text_section.js',
+367 silly gunzTarPerm   436,
+367 silly gunzTarPerm   420 ]
+368 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/view/stache/utils.js
+369 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/view/stache/utils.js',
+369 silly gunzTarPerm   436,
+369 silly gunzTarPerm   420 ]
+370 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/attributes.js
+371 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/attributes.js',
+371 silly gunzTarPerm   436,
+371 silly gunzTarPerm   420 ]
+372 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/bubble.js
+373 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/bubble.js',
+373 silly gunzTarPerm   436,
+373 silly gunzTarPerm   420 ]
+374 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/define.js
+375 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/define.js',
+375 silly gunzTarPerm   436,
+375 silly gunzTarPerm   420 ]
+376 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/delegate.js
+377 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/delegate.js',
+377 silly gunzTarPerm   436,
+377 silly gunzTarPerm   420 ]
+378 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/backup.js
+379 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/backup.js',
+379 silly gunzTarPerm   436,
+379 silly gunzTarPerm   420 ]
+380 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/lazy.js
+381 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/lazy.js',
+381 silly gunzTarPerm   436,
+381 silly gunzTarPerm   420 ]
+382 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/list.js
+383 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/list.js',
+383 silly gunzTarPerm   436,
+383 silly gunzTarPerm   420 ]
+384 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/setter.js
+385 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/setter.js',
+385 silly gunzTarPerm   436,
+385 silly gunzTarPerm   420 ]
+386 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/sort.js
+387 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/sort.js',
+387 silly gunzTarPerm   436,
+387 silly gunzTarPerm   420 ]
+388 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/validations.js
+389 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/validations.js',
+389 silly gunzTarPerm   436,
+389 silly gunzTarPerm   420 ]
+390 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/lazy/bubble.js
+391 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/lazy/bubble.js',
+391 silly gunzTarPerm   436,
+391 silly gunzTarPerm   420 ]
+392 silly gunzTarPerm extractEntry example/bower_components/canjs/amd-dev/can/map/lazy/nested_reference.js
+393 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/amd-dev/can/map/lazy/nested_reference.js',
+393 silly gunzTarPerm   436,
+393 silly gunzTarPerm   420 ]
+394 silly gunzTarPerm extractEntry example/bower_components/canjs/bower.json
+395 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/bower.json', 436, 420 ]
+396 silly gunzTarPerm extractEntry example/bower_components/canjs/readme.md
+397 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/readme.md', 436, 420 ]
+398 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/can.js
+399 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/can.js', 436, 420 ]
+400 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/view.js
+401 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/view.js',
+401 silly gunzTarPerm   436,
+401 silly gunzTarPerm   420 ]
+402 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/elements.js
+403 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/elements.js',
+403 silly gunzTarPerm   436,
+403 silly gunzTarPerm   420 ]
+404 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/render.js
+405 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/render.js',
+405 silly gunzTarPerm   436,
+405 silly gunzTarPerm   420 ]
+406 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/scanner.js
+407 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/scanner.js',
+407 silly gunzTarPerm   436,
+407 silly gunzTarPerm   420 ]
+408 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/live/live.js
+409 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/live/live.js',
+409 silly gunzTarPerm   436,
+409 silly gunzTarPerm   420 ]
+410 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/modifiers/modifiers.js
+411 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/modifiers/modifiers.js',
+411 silly gunzTarPerm   436,
+411 silly gunzTarPerm   420 ]
+412 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/mustache/mustache.js
+413 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/mustache/mustache.js',
+413 silly gunzTarPerm   436,
+413 silly gunzTarPerm   420 ]
+414 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/callbacks/callbacks.js
+415 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/callbacks/callbacks.js',
+415 silly gunzTarPerm   436,
+415 silly gunzTarPerm   420 ]
+416 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/parser/parser.js
+417 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/parser/parser.js',
+417 silly gunzTarPerm   436,
+417 silly gunzTarPerm   420 ]
+418 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/ejs/ejs.js
+419 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/ejs/ejs.js',
+419 silly gunzTarPerm   436,
+419 silly gunzTarPerm   420 ]
+420 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/bindings/bindings.js
+421 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/bindings/bindings.js',
+421 silly gunzTarPerm   436,
+421 silly gunzTarPerm   420 ]
+422 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/scope/scope.js
+423 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/scope/scope.js',
+423 silly gunzTarPerm   436,
+423 silly gunzTarPerm   420 ]
+424 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/stache/html_section.js
+425 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/stache/html_section.js',
+425 silly gunzTarPerm   436,
+425 silly gunzTarPerm   420 ]
+426 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/stache/mustache_core.js
+427 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/stache/mustache_core.js',
+427 silly gunzTarPerm   436,
+427 silly gunzTarPerm   420 ]
+428 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/stache/mustache_helpers.js
+429 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/stache/mustache_helpers.js',
+429 silly gunzTarPerm   436,
+429 silly gunzTarPerm   420 ]
+430 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/stache/stache.js
+431 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/stache/stache.js',
+431 silly gunzTarPerm   436,
+431 silly gunzTarPerm   420 ]
+432 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/stache/text_section.js
+433 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/stache/text_section.js',
+433 silly gunzTarPerm   436,
+433 silly gunzTarPerm   420 ]
+434 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/stache/utils.js
+435 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/stache/utils.js',
+435 silly gunzTarPerm   436,
+435 silly gunzTarPerm   420 ]
+436 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/target/target.js
+437 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/target/target.js',
+437 silly gunzTarPerm   436,
+437 silly gunzTarPerm   420 ]
+438 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/view/node_lists/node_lists.js
+439 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/view/node_lists/node_lists.js',
+439 silly gunzTarPerm   436,
+439 silly gunzTarPerm   420 ]
+440 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/compute/compute.js
+441 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/compute/compute.js',
+441 silly gunzTarPerm   436,
+441 silly gunzTarPerm   420 ]
+442 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/construct/construct.js
+443 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/construct/construct.js',
+443 silly gunzTarPerm   436,
+443 silly gunzTarPerm   420 ]
+444 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/construct/proxy/proxy.js
+445 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/construct/proxy/proxy.js',
+445 silly gunzTarPerm   436,
+445 silly gunzTarPerm   420 ]
+446 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/construct/super/super.js
+447 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/construct/super/super.js',
+447 silly gunzTarPerm   436,
+447 silly gunzTarPerm   420 ]
+448 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/control/control.js
+449 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/control/control.js',
+449 silly gunzTarPerm   436,
+449 silly gunzTarPerm   420 ]
+450 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/control/plugin/plugin.js
+451 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/control/plugin/plugin.js',
+451 silly gunzTarPerm   436,
+451 silly gunzTarPerm   420 ]
+452 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/control/route/route.js
+453 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/control/route/route.js',
+453 silly gunzTarPerm   436,
+453 silly gunzTarPerm   420 ]
+454 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/event/event.js
+455 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/event/event.js',
+455 silly gunzTarPerm   436,
+455 silly gunzTarPerm   420 ]
+456 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/component/component.js
+457 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/component/component.js',
+457 silly gunzTarPerm   436,
+457 silly gunzTarPerm   420 ]
+458 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/bubble.js
+459 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/bubble.js',
+459 silly gunzTarPerm   436,
+459 silly gunzTarPerm   420 ]
+460 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/map.js
+461 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/map.js',
+461 silly gunzTarPerm   436,
+461 silly gunzTarPerm   420 ]
+462 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/lazy/bubble.js
+463 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/lazy/bubble.js',
+463 silly gunzTarPerm   436,
+463 silly gunzTarPerm   420 ]
+464 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/lazy/lazy.js
+465 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/lazy/lazy.js',
+465 silly gunzTarPerm   436,
+465 silly gunzTarPerm   420 ]
+466 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/lazy/nested_reference.js
+467 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/lazy/nested_reference.js',
+467 silly gunzTarPerm   436,
+467 silly gunzTarPerm   420 ]
+468 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/define/define.js
+469 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/define/define.js',
+469 silly gunzTarPerm   436,
+469 silly gunzTarPerm   420 ]
+470 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/delegate/delegate.js
+471 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/delegate/delegate.js',
+471 silly gunzTarPerm   436,
+471 silly gunzTarPerm   420 ]
+472 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/backup/backup.js
+473 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/backup/backup.js',
+473 silly gunzTarPerm   436,
+473 silly gunzTarPerm   420 ]
+474 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/list/list.js
+475 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/list/list.js',
+475 silly gunzTarPerm   436,
+475 silly gunzTarPerm   420 ]
+476 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/attributes/attributes.js
+477 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/attributes/attributes.js',
+477 silly gunzTarPerm   436,
+477 silly gunzTarPerm   420 ]
+478 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/setter/setter.js
+479 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/setter/setter.js',
+479 silly gunzTarPerm   436,
+479 silly gunzTarPerm   420 ]
+480 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/sort/sort.js
+481 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/sort/sort.js',
+481 silly gunzTarPerm   436,
+481 silly gunzTarPerm   420 ]
+482 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/map/validations/validations.js
+483 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/map/validations/validations.js',
+483 silly gunzTarPerm   436,
+483 silly gunzTarPerm   420 ]
+484 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/model/model.js
+485 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/model/model.js',
+485 silly gunzTarPerm   436,
+485 silly gunzTarPerm   420 ]
+486 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/model/queue/queue.js
+487 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/model/queue/queue.js',
+487 silly gunzTarPerm   436,
+487 silly gunzTarPerm   420 ]
+488 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/observe/observe.js
+489 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/observe/observe.js',
+489 silly gunzTarPerm   436,
+489 silly gunzTarPerm   420 ]
+490 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/route/route.js
+491 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/route/route.js',
+491 silly gunzTarPerm   436,
+491 silly gunzTarPerm   420 ]
+492 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/route/pushstate/pushstate.js
+493 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/route/pushstate/pushstate.js',
+493 silly gunzTarPerm   436,
+493 silly gunzTarPerm   420 ]
+494 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/hashchange.js
+495 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/hashchange.js',
+495 silly gunzTarPerm   436,
+495 silly gunzTarPerm   420 ]
+496 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/can.js
+497 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/can.js',
+497 silly gunzTarPerm   436,
+497 silly gunzTarPerm   420 ]
+498 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/deferred.js
+499 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/deferred.js',
+499 silly gunzTarPerm   436,
+499 silly gunzTarPerm   420 ]
+500 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/fragment.js
+501 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/fragment.js',
+501 silly gunzTarPerm   436,
+501 silly gunzTarPerm   420 ]
+502 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/util.js
+503 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/util.js',
+503 silly gunzTarPerm   436,
+503 silly gunzTarPerm   420 ]
+504 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/batch/batch.js
+505 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/batch/batch.js',
+505 silly gunzTarPerm   436,
+505 silly gunzTarPerm   420 ]
+506 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/dojo/dojo.js
+507 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/dojo/dojo.js',
+507 silly gunzTarPerm   436,
+507 silly gunzTarPerm   420 ]
+508 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/fixture/fixture.js
+509 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/fixture/fixture.js',
+509 silly gunzTarPerm   436,
+509 silly gunzTarPerm   420 ]
+510 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/bind/bind.js
+511 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/bind/bind.js',
+511 silly gunzTarPerm   436,
+511 silly gunzTarPerm   420 ]
+512 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/attr/attr.js
+513 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/attr/attr.js',
+513 silly gunzTarPerm   436,
+513 silly gunzTarPerm   420 ]
+514 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/inserted/inserted.js
+515 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/inserted/inserted.js',
+515 silly gunzTarPerm   436,
+515 silly gunzTarPerm   420 ]
+516 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/jquery/jquery.js
+517 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/jquery/jquery.js',
+517 silly gunzTarPerm   436,
+517 silly gunzTarPerm   420 ]
+518 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/mootools/mootools.js
+519 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/mootools/mootools.js',
+519 silly gunzTarPerm   436,
+519 silly gunzTarPerm   420 ]
+520 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/object/object.js
+521 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/object/object.js',
+521 silly gunzTarPerm   436,
+521 silly gunzTarPerm   420 ]
+522 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/object/isplain/isplain.js
+523 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/object/isplain/isplain.js',
+523 silly gunzTarPerm   436,
+523 silly gunzTarPerm   420 ]
+524 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/string/string.js
+525 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/string/string.js',
+525 silly gunzTarPerm   436,
+525 silly gunzTarPerm   420 ]
+526 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/string/deparam/deparam.js
+527 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/string/deparam/deparam.js',
+527 silly gunzTarPerm   436,
+527 silly gunzTarPerm   420 ]
+528 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/array/each.js
+529 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/array/each.js',
+529 silly gunzTarPerm   436,
+529 silly gunzTarPerm   420 ]
+530 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/yui/yui.js
+531 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/yui/yui.js',
+531 silly gunzTarPerm   436,
+531 silly gunzTarPerm   420 ]
+532 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/util/zepto/zepto.js
+533 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/util/zepto/zepto.js',
+533 silly gunzTarPerm   436,
+533 silly gunzTarPerm   420 ]
+534 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/list/list.js
+535 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/list/list.js',
+535 silly gunzTarPerm   436,
+535 silly gunzTarPerm   420 ]
+536 silly gunzTarPerm extractEntry example/bower_components/canjs/steal/canjs/list/promise/promise.js
+537 silly gunzTarPerm modified mode [ 'example/bower_components/canjs/steal/canjs/list/promise/promise.js',
+537 silly gunzTarPerm   436,
+537 silly gunzTarPerm   420 ]
+538 silly gunzTarPerm extractEntry example/bower_components/canjs-localstorage/can.localstorage.js
+539 silly gunzTarPerm modified mode [ 'example/bower_components/canjs-localstorage/can.localstorage.js',
+539 silly gunzTarPerm   436,
+539 silly gunzTarPerm   420 ]
+540 silly gunzTarPerm extractEntry example/bower_components/canjs-localstorage/can.localstorage.min.js
+541 silly gunzTarPerm modified mode [ 'example/bower_components/canjs-localstorage/can.localstorage.min.js',
+541 silly gunzTarPerm   436,
+541 silly gunzTarPerm   420 ]
+542 silly gunzTarPerm extractEntry example/bower_components/canjs-localstorage/.bower.json
+543 silly gunzTarPerm extractEntry example/bower_components/canjs-localstorage/bower.json
+544 silly gunzTarPerm modified mode [ 'example/bower_components/canjs-localstorage/bower.json',
+544 silly gunzTarPerm   436,
+544 silly gunzTarPerm   420 ]
+545 silly gunzTarPerm extractEntry example/bower_components/jquery/package.json
+546 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/package.json', 436, 420 ]
+547 silly gunzTarPerm extractEntry example/bower_components/jquery/.npmignore
+548 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/.npmignore', 436, 420 ]
+549 silly gunzTarPerm extractEntry example/bower_components/jquery/README.md
+550 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/README.md', 436, 420 ]
+551 silly gunzTarPerm extractEntry example/bower_components/jquery/Gruntfile.js
+552 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/Gruntfile.js', 436, 420 ]
+553 silly gunzTarPerm extractEntry example/bower_components/jquery/jquery-migrate.js
+554 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/jquery-migrate.js', 509, 493 ]
+555 silly gunzTarPerm extractEntry example/bower_components/jquery/jquery-migrate.min.js
+556 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/jquery-migrate.min.js',
+556 silly gunzTarPerm   509,
+556 silly gunzTarPerm   493 ]
+557 silly gunzTarPerm extractEntry example/bower_components/jquery/jquery.js
+558 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/jquery.js', 509, 493 ]
+559 silly gunzTarPerm extractEntry example/bower_components/jquery/jquery.min.js
+560 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/jquery.min.js', 509, 493 ]
+561 silly gunzTarPerm extractEntry example/bower_components/jquery/bower.json
+562 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/bower.json', 509, 493 ]
+563 silly gunzTarPerm extractEntry example/bower_components/jquery/.gitattributes
+564 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/.gitattributes', 436, 420 ]
+565 silly gunzTarPerm extractEntry example/bower_components/jquery/MIT-LICENSE.txt
+566 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/MIT-LICENSE.txt', 436, 420 ]
+567 silly gunzTarPerm extractEntry example/bower_components/jquery/.bower.json
+568 silly gunzTarPerm extractEntry example/bower_components/jquery/.editorconfig
+569 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/.editorconfig', 436, 420 ]
+570 silly gunzTarPerm extractEntry example/bower_components/jquery/build/release-notes.js
+571 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/build/release-notes.js',
+571 silly gunzTarPerm   436,
+571 silly gunzTarPerm   420 ]
+572 silly gunzTarPerm extractEntry example/bower_components/jquery/build/release.js
+573 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/build/release.js', 436, 420 ]
+574 silly gunzTarPerm extractEntry example/bower_components/jquery/component.json
+575 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/component.json', 509, 493 ]
+576 silly gunzTarPerm extractEntry example/bower_components/jquery/composer.json
+577 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/composer.json', 509, 493 ]
+578 silly gunzTarPerm extractEntry example/bower_components/jquery/.gitmodules
+579 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/.gitmodules', 436, 420 ]
+580 silly gunzTarPerm extractEntry example/bower_components/jquery/.jshintrc
+581 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/.jshintrc', 436, 420 ]
+582 silly gunzTarPerm extractEntry example/bower_components/jquery/.mailmap
+583 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/.mailmap', 436, 420 ]
+584 silly gunzTarPerm extractEntry example/bower_components/jquery/AUTHORS.txt
+585 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/AUTHORS.txt', 436, 420 ]
+586 silly gunzTarPerm extractEntry example/bower_components/jquery/jquery.min.map
+587 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/jquery.min.map', 509, 493 ]
+588 silly gunzTarPerm extractEntry example/bower_components/jquery/CONTRIBUTING.md
+589 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/CONTRIBUTING.md', 436, 420 ]
+590 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/benchmark.js
+591 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/benchmark.js',
+591 silly gunzTarPerm   436,
+591 silly gunzTarPerm   420 ]
+592 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/benchmarker.js
+593 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/benchmarker.js',
+593 silly gunzTarPerm   436,
+593 silly gunzTarPerm   420 ]
+594 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/jquery-basis.js
+595 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/jquery-basis.js',
+595 silly gunzTarPerm   436,
+595 silly gunzTarPerm   420 ]
+596 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/closest.html
+597 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/closest.html',
+597 silly gunzTarPerm   436,
+597 silly gunzTarPerm   420 ]
+598 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/css.html
+599 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/css.html', 436, 420 ]
+600 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/benchmarker.css
+601 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/benchmarker.css',
+601 silly gunzTarPerm   436,
+601 silly gunzTarPerm   420 ]
+602 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/filter.html
+603 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/filter.html', 436, 420 ]
+604 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/find.html
+605 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/find.html', 436, 420 ]
+606 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/index.html
+607 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/index.html', 436, 420 ]
+608 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/slice.vs.concat.html
+609 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/slice.vs.concat.html',
+609 silly gunzTarPerm   436,
+609 silly gunzTarPerm   420 ]
+610 silly gunzTarPerm extractEntry example/bower_components/jquery/speed/event.html
+611 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/speed/event.html', 436, 420 ]
+612 silly gunzTarPerm extractEntry example/bower_components/jquery/src/wrap.js
+613 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/wrap.js', 436, 420 ]
+614 silly gunzTarPerm extractEntry example/bower_components/jquery/src/deprecated.js
+615 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/deprecated.js', 436, 420 ]
+616 silly gunzTarPerm extractEntry example/bower_components/jquery/src/dimensions.js
+617 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/dimensions.js', 436, 420 ]
+618 silly gunzTarPerm extractEntry example/bower_components/jquery/src/effects.js
+619 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/effects.js', 436, 420 ]
+620 silly gunzTarPerm extractEntry example/bower_components/jquery/src/deferred.js
+621 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/deferred.js', 436, 420 ]
+622 silly gunzTarPerm extractEntry example/bower_components/jquery/src/traversing.js
+623 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/traversing.js', 436, 420 ]
+624 silly gunzTarPerm extractEntry example/bower_components/jquery/src/exports.js
+625 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/exports.js', 436, 420 ]
+626 silly gunzTarPerm extractEntry example/bower_components/jquery/src/intro.js
+627 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/intro.js', 436, 420 ]
+628 silly gunzTarPerm extractEntry example/bower_components/jquery/src/manipulation.js
+629 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/manipulation.js',
+629 silly gunzTarPerm   436,
+629 silly gunzTarPerm   420 ]
+630 silly gunzTarPerm extractEntry example/bower_components/jquery/src/offset.js
+631 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/offset.js', 436, 420 ]
+632 silly gunzTarPerm extractEntry example/bower_components/jquery/src/data.js
+633 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/data.js', 436, 420 ]
+634 silly gunzTarPerm extractEntry example/bower_components/jquery/src/outro.js
+635 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/outro.js', 436, 420 ]
+636 silly gunzTarPerm extractEntry example/bower_components/jquery/src/css.js
+637 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/css.js', 436, 420 ]
+638 silly gunzTarPerm extractEntry example/bower_components/jquery/src/queue.js
+639 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/queue.js', 436, 420 ]
+640 silly gunzTarPerm extractEntry example/bower_components/jquery/src/core.js
+641 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/core.js', 436, 420 ]
+642 silly gunzTarPerm extractEntry example/bower_components/jquery/src/selector-native.js
+643 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/selector-native.js',
+643 silly gunzTarPerm   436,
+643 silly gunzTarPerm   420 ]
+644 silly gunzTarPerm extractEntry example/bower_components/jquery/src/callbacks.js
+645 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/callbacks.js', 436, 420 ]
+646 silly gunzTarPerm extractEntry example/bower_components/jquery/src/serialize.js
+647 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/serialize.js', 436, 420 ]
+648 silly gunzTarPerm extractEntry example/bower_components/jquery/src/attributes.js
+649 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/attributes.js', 436, 420 ]
+650 silly gunzTarPerm extractEntry example/bower_components/jquery/src/support.js
+651 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/support.js', 436, 420 ]
+652 silly gunzTarPerm extractEntry example/bower_components/jquery/src/ajax.js
+653 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/ajax.js', 436, 420 ]
+654 silly gunzTarPerm extractEntry example/bower_components/jquery/src/sizzle-jquery.js
+655 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/sizzle-jquery.js',
+655 silly gunzTarPerm   436,
+655 silly gunzTarPerm   420 ]
+656 silly gunzTarPerm extractEntry example/bower_components/jquery/src/event-alias.js
+657 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/event-alias.js',
+657 silly gunzTarPerm   436,
+657 silly gunzTarPerm   420 ]
+658 silly gunzTarPerm extractEntry example/bower_components/jquery/src/event.js
+659 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/event.js', 436, 420 ]
+660 silly gunzTarPerm extractEntry example/bower_components/jquery/src/ajax/jsonp.js
+661 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/ajax/jsonp.js', 436, 420 ]
+662 silly gunzTarPerm extractEntry example/bower_components/jquery/src/ajax/script.js
+663 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/ajax/script.js',
+663 silly gunzTarPerm   436,
+663 silly gunzTarPerm   420 ]
+664 silly gunzTarPerm extractEntry example/bower_components/jquery/src/ajax/xhr.js
+665 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/ajax/xhr.js', 436, 420 ]
+666 silly gunzTarPerm extractEntry example/bower_components/jquery/src/.jshintrc
+667 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/src/.jshintrc', 436, 420 ]
+668 silly gunzTarPerm extractEntry example/bower_components/jquery/test/jquery.js
+669 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/jquery.js', 436, 420 ]
+670 silly gunzTarPerm extractEntry example/bower_components/jquery/test/.jshintignore
+671 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/.jshintignore',
+671 silly gunzTarPerm   436,
+671 silly gunzTarPerm   420 ]
+672 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/badcall.js
+673 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/badcall.js',
+673 silly gunzTarPerm   436,
+673 silly gunzTarPerm   420 ]
+674 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/badjson.js
+675 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/badjson.js',
+675 silly gunzTarPerm   436,
+675 silly gunzTarPerm   420 ]
+676 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/jquery-1.9.1.ajax_xhr.min.js
+677 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/jquery-1.9.1.ajax_xhr.min.js',
+677 silly gunzTarPerm   436,
+677 silly gunzTarPerm   420 ]
+678 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/json_obj.js
+679 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/json_obj.js',
+679 silly gunzTarPerm   436,
+679 silly gunzTarPerm   420 ]
+680 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/readywaitasset.js
+681 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/readywaitasset.js',
+681 silly gunzTarPerm   436,
+681 silly gunzTarPerm   420 ]
+682 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/readywaitloader.js
+683 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/readywaitloader.js',
+683 silly gunzTarPerm   436,
+683 silly gunzTarPerm   420 ]
+684 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/test.js
+685 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/test.js', 436, 420 ]
+686 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/testinit.js
+687 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/testinit.js',
+687 silly gunzTarPerm   436,
+687 silly gunzTarPerm   420 ]
+688 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/testrunner.js
+689 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/testrunner.js',
+689 silly gunzTarPerm   436,
+689 silly gunzTarPerm   420 ]
+690 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/manipulation/iframe-denied.html
+691 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/manipulation/iframe-denied.html',
+691 silly gunzTarPerm   436,
+691 silly gunzTarPerm   420 ]
+692 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/echoQuery.php
+693 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/echoQuery.php',
+693 silly gunzTarPerm   436,
+693 silly gunzTarPerm   420 ]
+694 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/errorWithJSON.php
+695 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/errorWithJSON.php',
+695 silly gunzTarPerm   436,
+695 silly gunzTarPerm   420 ]
+696 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/errorWithText.php
+697 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/errorWithText.php',
+697 silly gunzTarPerm   436,
+697 silly gunzTarPerm   420 ]
+698 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/etag.php
+699 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/etag.php',
+699 silly gunzTarPerm   436,
+699 silly gunzTarPerm   420 ]
+700 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/evalScript.php
+701 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/evalScript.php',
+701 silly gunzTarPerm   436,
+701 silly gunzTarPerm   420 ]
+702 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/event/focusElem.html
+703 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/event/focusElem.html',
+703 silly gunzTarPerm   436,
+703 silly gunzTarPerm   420 ]
+704 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/event/longLoadScript.php
+705 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/event/longLoadScript.php',
+705 silly gunzTarPerm   436,
+705 silly gunzTarPerm   420 ]
+706 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/event/onbeforeunload.html
+707 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/event/onbeforeunload.html',
+707 silly gunzTarPerm   436,
+707 silly gunzTarPerm   420 ]
+708 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/event/promiseReady.html
+709 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/event/promiseReady.html',
+709 silly gunzTarPerm   436,
+709 silly gunzTarPerm   420 ]
+710 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/event/syncReady.html
+711 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/event/syncReady.html',
+711 silly gunzTarPerm   436,
+711 silly gunzTarPerm   420 ]
+712 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/headers.php
+713 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/headers.php',
+713 silly gunzTarPerm   436,
+713 silly gunzTarPerm   420 ]
+714 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/if_modified_since.php
+715 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/if_modified_since.php',
+715 silly gunzTarPerm   436,
+715 silly gunzTarPerm   420 ]
+716 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/iframe.html
+717 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/iframe.html',
+717 silly gunzTarPerm   436,
+717 silly gunzTarPerm   420 ]
+718 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/1x1.jpg
+719 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/1x1.jpg', 436, 420 ]
+720 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/json.php
+721 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/json.php',
+721 silly gunzTarPerm   436,
+721 silly gunzTarPerm   420 ]
+722 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/atom+xml.php
+723 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/atom+xml.php',
+723 silly gunzTarPerm   436,
+723 silly gunzTarPerm   420 ]
+724 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/jsonp.php
+725 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/jsonp.php',
+725 silly gunzTarPerm   436,
+725 silly gunzTarPerm   420 ]
+726 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/ajax/unreleasedXHR.html
+727 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/ajax/unreleasedXHR.html',
+727 silly gunzTarPerm   436,
+727 silly gunzTarPerm   420 ]
+728 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/name.html
+729 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/name.html',
+729 silly gunzTarPerm   436,
+729 silly gunzTarPerm   420 ]
+730 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/name.php
+731 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/name.php',
+731 silly gunzTarPerm   436,
+731 silly gunzTarPerm   420 ]
+732 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/nocontent.php
+733 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/nocontent.php',
+733 silly gunzTarPerm   436,
+733 silly gunzTarPerm   420 ]
+734 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/offset/absolute.html
+735 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/offset/absolute.html',
+735 silly gunzTarPerm   436,
+735 silly gunzTarPerm   420 ]
+736 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/offset/body.html
+737 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/offset/body.html',
+737 silly gunzTarPerm   436,
+737 silly gunzTarPerm   420 ]
+738 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/offset/fixed.html
+739 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/offset/fixed.html',
+739 silly gunzTarPerm   436,
+739 silly gunzTarPerm   420 ]
+740 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/offset/relative.html
+741 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/offset/relative.html',
+741 silly gunzTarPerm   436,
+741 silly gunzTarPerm   420 ]
+742 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/offset/scroll.html
+743 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/offset/scroll.html',
+743 silly gunzTarPerm   436,
+743 silly gunzTarPerm   420 ]
+744 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/offset/static.html
+745 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/offset/static.html',
+745 silly gunzTarPerm   436,
+745 silly gunzTarPerm   420 ]
+746 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/offset/table.html
+747 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/offset/table.html',
+747 silly gunzTarPerm   436,
+747 silly gunzTarPerm   420 ]
+748 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/params_html.php
+749 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/params_html.php',
+749 silly gunzTarPerm   436,
+749 silly gunzTarPerm   420 ]
+750 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/cleanScript.html
+751 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/cleanScript.html',
+751 silly gunzTarPerm   436,
+751 silly gunzTarPerm   420 ]
+752 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/core/cc_on.html
+753 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/core/cc_on.html',
+753 silly gunzTarPerm   436,
+753 silly gunzTarPerm   420 ]
+754 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/core/dont_return.php
+755 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/core/dont_return.php',
+755 silly gunzTarPerm   436,
+755 silly gunzTarPerm   420 ]
+756 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/core/dynamic_ready.html
+757 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/core/dynamic_ready.html',
+757 silly gunzTarPerm   436,
+757 silly gunzTarPerm   420 ]
+758 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/script.php
+759 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/script.php',
+759 silly gunzTarPerm   436,
+759 silly gunzTarPerm   420 ]
+760 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/selector/html5_selector.html
+761 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/selector/html5_selector.html',
+761 silly gunzTarPerm   436,
+761 silly gunzTarPerm   420 ]
+762 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/selector/sizzle_cache.html
+763 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/selector/sizzle_cache.html',
+763 silly gunzTarPerm   436,
+763 silly gunzTarPerm   420 ]
+764 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/statusText.php
+765 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/statusText.php',
+765 silly gunzTarPerm   436,
+765 silly gunzTarPerm   420 ]
+766 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/support/csp.js
+767 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/support/csp.js',
+767 silly gunzTarPerm   436,
+767 silly gunzTarPerm   420 ]
+768 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/support/bodyBackground.html
+769 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/support/bodyBackground.html',
+769 silly gunzTarPerm   436,
+769 silly gunzTarPerm   420 ]
+770 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/support/boxSizing.html
+771 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/support/boxSizing.html',
+771 silly gunzTarPerm   436,
+771 silly gunzTarPerm   420 ]
+772 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/support/csp.php
+773 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/support/csp.php',
+773 silly gunzTarPerm   436,
+773 silly gunzTarPerm   420 ]
+774 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/support/shrinkWrapBlocks.html
+775 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/support/shrinkWrapBlocks.html',
+775 silly gunzTarPerm   436,
+775 silly gunzTarPerm   420 ]
+776 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/support/testElementCrash.html
+777 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/support/testElementCrash.html',
+777 silly gunzTarPerm   436,
+777 silly gunzTarPerm   420 ]
+778 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/test.html
+779 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/test.html',
+779 silly gunzTarPerm   436,
+779 silly gunzTarPerm   420 ]
+780 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/dashboard.xml
+781 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/dashboard.xml',
+781 silly gunzTarPerm   436,
+781 silly gunzTarPerm   420 ]
+782 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/test.php
+783 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/test.php',
+783 silly gunzTarPerm   436,
+783 silly gunzTarPerm   420 ]
+784 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/test2.html
+785 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/test2.html',
+785 silly gunzTarPerm   436,
+785 silly gunzTarPerm   420 ]
+786 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/test3.html
+787 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/test3.html',
+787 silly gunzTarPerm   436,
+787 silly gunzTarPerm   420 ]
+788 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/dimensions/documentLarge.html
+789 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/dimensions/documentLarge.html',
+789 silly gunzTarPerm   436,
+789 silly gunzTarPerm   420 ]
+790 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/dimensions/documentSmall.html
+791 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/dimensions/documentSmall.html',
+791 silly gunzTarPerm   436,
+791 silly gunzTarPerm   420 ]
+792 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/echoData.php
+793 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/echoData.php',
+793 silly gunzTarPerm   436,
+793 silly gunzTarPerm   420 ]
+794 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/testsuite.css
+795 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/testsuite.css',
+795 silly gunzTarPerm   436,
+795 silly gunzTarPerm   420 ]
+796 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/text.php
+797 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/text.php',
+797 silly gunzTarPerm   436,
+797 silly gunzTarPerm   420 ]
+798 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/ua.txt
+799 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/ua.txt', 436, 420 ]
+800 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/with_fries.xml
+801 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/with_fries.xml',
+801 silly gunzTarPerm   436,
+801 silly gunzTarPerm   420 ]
+802 silly gunzTarPerm extractEntry example/bower_components/jquery/test/data/with_fries_over_jsonp.php
+803 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/data/with_fries_over_jsonp.php',
+803 silly gunzTarPerm   436,
+803 silly gunzTarPerm   420 ]
+804 silly gunzTarPerm extractEntry example/bower_components/jquery/test/delegatetest.html
+805 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/delegatetest.html',
+805 silly gunzTarPerm   436,
+805 silly gunzTarPerm   420 ]
+806 silly gunzTarPerm extractEntry example/bower_components/jquery/test/hovertest.html
+807 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/hovertest.html',
+807 silly gunzTarPerm   436,
+807 silly gunzTarPerm   420 ]
+808 silly gunzTarPerm extractEntry example/bower_components/jquery/test/index.html
+809 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/index.html', 436, 420 ]
+810 silly gunzTarPerm extractEntry example/bower_components/jquery/test/.jshintrc
+811 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/.jshintrc', 436, 420 ]
+812 silly gunzTarPerm extractEntry example/bower_components/jquery/test/localfile.html
+813 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/localfile.html',
+813 silly gunzTarPerm   436,
+813 silly gunzTarPerm   420 ]
+814 silly gunzTarPerm extractEntry example/bower_components/jquery/test/networkerror.html
+815 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/networkerror.html',
+815 silly gunzTarPerm   436,
+815 silly gunzTarPerm   420 ]
+816 silly gunzTarPerm extractEntry example/bower_components/jquery/test/readywait.html
+817 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/readywait.html',
+817 silly gunzTarPerm   436,
+817 silly gunzTarPerm   420 ]
+818 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/ajax.js
+819 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/ajax.js', 436, 420 ]
+820 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/deferred.js
+821 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/deferred.js',
+821 silly gunzTarPerm   436,
+821 silly gunzTarPerm   420 ]
+822 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/deprecated.js
+823 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/deprecated.js',
+823 silly gunzTarPerm   436,
+823 silly gunzTarPerm   420 ]
+824 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/dimensions.js
+825 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/dimensions.js',
+825 silly gunzTarPerm   436,
+825 silly gunzTarPerm   420 ]
+826 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/effects.js
+827 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/effects.js',
+827 silly gunzTarPerm   436,
+827 silly gunzTarPerm   420 ]
+828 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/data.js
+829 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/data.js', 436, 420 ]
+830 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/exports.js
+831 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/exports.js',
+831 silly gunzTarPerm   436,
+831 silly gunzTarPerm   420 ]
+832 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/manipulation.js
+833 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/manipulation.js',
+833 silly gunzTarPerm   436,
+833 silly gunzTarPerm   420 ]
+834 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/offset.js
+835 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/offset.js',
+835 silly gunzTarPerm   436,
+835 silly gunzTarPerm   420 ]
+836 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/queue.js
+837 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/queue.js',
+837 silly gunzTarPerm   436,
+837 silly gunzTarPerm   420 ]
+838 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/selector.js
+839 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/selector.js',
+839 silly gunzTarPerm   436,
+839 silly gunzTarPerm   420 ]
+840 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/css.js
+841 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/css.js', 436, 420 ]
+842 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/serialize.js
+843 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/serialize.js',
+843 silly gunzTarPerm   436,
+843 silly gunzTarPerm   420 ]
+844 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/core.js
+845 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/core.js', 436, 420 ]
+846 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/support.js
+847 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/support.js',
+847 silly gunzTarPerm   436,
+847 silly gunzTarPerm   420 ]
+848 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/callbacks.js
+849 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/callbacks.js',
+849 silly gunzTarPerm   436,
+849 silly gunzTarPerm   420 ]
+850 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/traversing.js
+851 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/traversing.js',
+851 silly gunzTarPerm   436,
+851 silly gunzTarPerm   420 ]
+852 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/attributes.js
+853 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/attributes.js',
+853 silly gunzTarPerm   436,
+853 silly gunzTarPerm   420 ]
+854 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/wrap.js
+855 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/wrap.js', 436, 420 ]
+856 silly gunzTarPerm extractEntry example/bower_components/jquery/test/unit/event.js
+857 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/unit/event.js',
+857 silly gunzTarPerm   436,
+857 silly gunzTarPerm   420 ]
+858 silly gunzTarPerm extractEntry example/bower_components/jquery/test/xhtml.php
+859 silly gunzTarPerm modified mode [ 'example/bower_components/jquery/test/xhtml.php', 436, 420 ]
+860 silly gunzTarPerm extractEntry example/bower_components/todomvc-common/base.js
+861 silly gunzTarPerm modified mode [ 'example/bower_components/todomvc-common/base.js', 436, 420 ]
+862 silly gunzTarPerm extractEntry example/bower_components/todomvc-common/.bower.json
+863 silly gunzTarPerm extractEntry example/bower_components/todomvc-common/base.css
+864 silly gunzTarPerm modified mode [ 'example/bower_components/todomvc-common/base.css', 436, 420 ]
+865 silly gunzTarPerm extractEntry example/bower_components/todomvc-common/bg.png
+866 silly gunzTarPerm modified mode [ 'example/bower_components/todomvc-common/bg.png', 436, 420 ]
+867 silly gunzTarPerm extractEntry example/bower_components/todomvc-common/bower.json
+868 silly gunzTarPerm modified mode [ 'example/bower_components/todomvc-common/bower.json',
+868 silly gunzTarPerm   436,
+868 silly gunzTarPerm   420 ]
+869 silly gunzTarPerm extractEntry example/bower_components/todomvc-common/readme.md
+870 silly gunzTarPerm modified mode [ 'example/bower_components/todomvc-common/readme.md', 436, 420 ]
+871 silly gunzTarPerm extractEntry example/development.html
+872 silly gunzTarPerm extractEntry example/dist/production.js
+873 silly gunzTarPerm extractEntry example/dist/production.min.js
+874 silly gunzTarPerm extractEntry example/dist/views.production.js
+875 silly gunzTarPerm extractEntry example/bower.json
+876 silly gunzTarPerm extractEntry example/js/app.js
+877 silly gunzTarPerm extractEntry example/js/components/todo-app.js
+878 silly gunzTarPerm extractEntry example/js/models/todo.js
+879 silly gunzTarPerm extractEntry example/readme.md
+880 silly gunzTarPerm extractEntry example/views/todos.mustache
+881 silly gunzTarPerm extractEntry example/index.html
+882 silly gunzTarPerm extractEntry .jshintrc
+883 silly gunzTarPerm extractEntry bin/can-compile
+884 silly gunzTarPerm extractEntry lib/compile.js
+885 silly gunzTarPerm extractEntry lib/index.js
+886 silly gunzTarPerm extractEntry tasks/cancompile.js
+887 silly gunzTarPerm extractEntry .travis.yml
+888 silly gunzTarPerm extractEntry readme.md
+889 silly gunzTarPerm extractEntry test/test.js
+890 silly gunzTarPerm extractEntry test/fixtures/view.ejs
+891 silly gunzTarPerm extractEntry test/fixtures/view.mustache
+892 silly gunzTarPerm extractEntry test/fixtures/view.stache
+893 silly lockFile 17aa87ce-cal-lib-node-modules-can-compile tar:///usr/local/lib/node_modules/can-compile
+894 silly lockFile 17aa87ce-cal-lib-node-modules-can-compile tar:///usr/local/lib/node_modules/can-compile
+895 silly lockFile fd752493-pm-can-compile-0-7-1-package-tgz tar:///Users/laurahartney/.npm/can-compile/0.7.1/package.tgz
+896 silly lockFile fd752493-pm-can-compile-0-7-1-package-tgz tar:///Users/laurahartney/.npm/can-compile/0.7.1/package.tgz
+897 info preinstall can-compile@0.7.1
+898 verbose readDependencies using package.json deps
+899 verbose readDependencies using package.json deps
+900 verbose cache add [ 'commander@1.1.1', null ]
+901 verbose cache add name=undefined spec="commander@1.1.1" args=["commander@1.1.1",null]
+902 verbose parsed url { protocol: null,
+902 verbose parsed url   slashes: null,
+902 verbose parsed url   auth: null,
+902 verbose parsed url   host: null,
+902 verbose parsed url   port: null,
+902 verbose parsed url   hostname: null,
+902 verbose parsed url   hash: null,
+902 verbose parsed url   search: null,
+902 verbose parsed url   query: null,
+902 verbose parsed url   pathname: 'commander@1.1.1',
+902 verbose parsed url   path: 'commander@1.1.1',
+902 verbose parsed url   href: 'commander@1.1.1' }
+903 verbose cache add [ 'async@0.1.22', null ]
+904 verbose cache add name=undefined spec="async@0.1.22" args=["async@0.1.22",null]
+905 verbose parsed url { protocol: null,
+905 verbose parsed url   slashes: null,
+905 verbose parsed url   auth: null,
+905 verbose parsed url   host: null,
+905 verbose parsed url   port: null,
+905 verbose parsed url   hostname: null,
+905 verbose parsed url   hash: null,
+905 verbose parsed url   search: null,
+905 verbose parsed url   query: null,
+905 verbose parsed url   pathname: 'async@0.1.22',
+905 verbose parsed url   path: 'async@0.1.22',
+905 verbose parsed url   href: 'async@0.1.22' }
+906 verbose cache add name="commander" spec="1.1.1" args=["commander","1.1.1"]
+907 verbose parsed url { protocol: null,
+907 verbose parsed url   slashes: null,
+907 verbose parsed url   auth: null,
+907 verbose parsed url   host: null,
+907 verbose parsed url   port: null,
+907 verbose parsed url   hostname: null,
+907 verbose parsed url   hash: null,
+907 verbose parsed url   search: null,
+907 verbose parsed url   query: null,
+907 verbose parsed url   pathname: '1.1.1',
+907 verbose parsed url   path: '1.1.1',
+907 verbose parsed url   href: '1.1.1' }
+908 verbose addNamed [ 'commander', '1.1.1' ]
+909 verbose addNamed [ '1.1.1', '1.1.1' ]
+910 silly lockFile e890879a-commander-1-1-1 commander@1.1.1
+911 verbose lock commander@1.1.1 /Users/laurahartney/.npm/e890879a-commander-1-1-1.lock
+912 verbose cache add name="async" spec="0.1.22" args=["async","0.1.22"]
+913 verbose parsed url { protocol: null,
+913 verbose parsed url   slashes: null,
+913 verbose parsed url   auth: null,
+913 verbose parsed url   host: null,
+913 verbose parsed url   port: null,
+913 verbose parsed url   hostname: null,
+913 verbose parsed url   hash: null,
+913 verbose parsed url   search: null,
+913 verbose parsed url   query: null,
+913 verbose parsed url   pathname: '0.1.22',
+913 verbose parsed url   path: '0.1.22',
+913 verbose parsed url   href: '0.1.22' }
+914 verbose addNamed [ 'async', '0.1.22' ]
+915 verbose addNamed [ '0.1.22', '0.1.22' ]
+916 silly lockFile 09d21715-async-0-1-22 async@0.1.22
+917 verbose lock async@0.1.22 /Users/laurahartney/.npm/09d21715-async-0-1-22.lock
+918 verbose cache add [ 'handlebars@~1.0.12', null ]
+919 verbose cache add name=undefined spec="handlebars@~1.0.12" args=["handlebars@~1.0.12",null]
+920 verbose parsed url { protocol: null,
+920 verbose parsed url   slashes: null,
+920 verbose parsed url   auth: null,
+920 verbose parsed url   host: null,
+920 verbose parsed url   port: null,
+920 verbose parsed url   hostname: null,
+920 verbose parsed url   hash: null,
+920 verbose parsed url   search: null,
+920 verbose parsed url   query: null,
+920 verbose parsed url   pathname: 'handlebars@~1.0.12',
+920 verbose parsed url   path: 'handlebars@~1.0.12',
+920 verbose parsed url   href: 'handlebars@~1.0.12' }
+921 verbose cache add [ 'jsdom@~0.5.6', null ]
+922 verbose cache add name=undefined spec="jsdom@~0.5.6" args=["jsdom@~0.5.6",null]
+923 verbose parsed url { protocol: null,
+923 verbose parsed url   slashes: null,
+923 verbose parsed url   auth: null,
+923 verbose parsed url   host: null,
+923 verbose parsed url   port: null,
+923 verbose parsed url   hostname: null,
+923 verbose parsed url   hash: null,
+923 verbose parsed url   search: null,
+923 verbose parsed url   query: null,
+923 verbose parsed url   pathname: 'jsdom@~0.5.6',
+923 verbose parsed url   path: 'jsdom@~0.5.6',
+923 verbose parsed url   href: 'jsdom@~0.5.6' }
+924 verbose cache add [ 'glob@~3.2.8', null ]
+925 verbose cache add name=undefined spec="glob@~3.2.8" args=["glob@~3.2.8",null]
+926 verbose parsed url { protocol: null,
+926 verbose parsed url   slashes: null,
+926 verbose parsed url   auth: null,
+926 verbose parsed url   host: null,
+926 verbose parsed url   port: null,
+926 verbose parsed url   hostname: null,
+926 verbose parsed url   hash: null,
+926 verbose parsed url   search: null,
+926 verbose parsed url   query: null,
+926 verbose parsed url   pathname: 'glob@~3.2.8',
+926 verbose parsed url   path: 'glob@~3.2.8',
+926 verbose parsed url   href: 'glob@~3.2.8' }
+927 verbose cache add name="handlebars" spec="~1.0.12" args=["handlebars","~1.0.12"]
+928 verbose parsed url { protocol: null,
+928 verbose parsed url   slashes: null,
+928 verbose parsed url   auth: null,
+928 verbose parsed url   host: null,
+928 verbose parsed url   port: null,
+928 verbose parsed url   hostname: null,
+928 verbose parsed url   hash: null,
+928 verbose parsed url   search: null,
+928 verbose parsed url   query: null,
+928 verbose parsed url   pathname: '~1.0.12',
+928 verbose parsed url   path: '~1.0.12',
+928 verbose parsed url   href: '~1.0.12' }
+929 verbose addNamed [ 'handlebars', '~1.0.12' ]
+930 verbose addNamed [ null, '>=1.0.12-0 <1.1.0-0' ]
+931 silly lockFile de76c6ce-handlebars-1-0-12 handlebars@~1.0.12
+932 verbose lock handlebars@~1.0.12 /Users/laurahartney/.npm/de76c6ce-handlebars-1-0-12.lock
+933 verbose cache add name="jsdom" spec="~0.5.6" args=["jsdom","~0.5.6"]
+934 verbose parsed url { protocol: null,
+934 verbose parsed url   slashes: null,
+934 verbose parsed url   auth: null,
+934 verbose parsed url   host: null,
+934 verbose parsed url   port: null,
+934 verbose parsed url   hostname: null,
+934 verbose parsed url   hash: null,
+934 verbose parsed url   search: null,
+934 verbose parsed url   query: null,
+934 verbose parsed url   pathname: '~0.5.6',
+934 verbose parsed url   path: '~0.5.6',
+934 verbose parsed url   href: '~0.5.6' }
+935 verbose addNamed [ 'jsdom', '~0.5.6' ]
+936 verbose addNamed [ null, '>=0.5.6-0 <0.6.0-0' ]
+937 silly lockFile 183024bf-jsdom-0-5-6 jsdom@~0.5.6
+938 verbose lock jsdom@~0.5.6 /Users/laurahartney/.npm/183024bf-jsdom-0-5-6.lock
+939 verbose cache add name="glob" spec="~3.2.8" args=["glob","~3.2.8"]
+940 verbose parsed url { protocol: null,
+940 verbose parsed url   slashes: null,
+940 verbose parsed url   auth: null,
+940 verbose parsed url   host: null,
+940 verbose parsed url   port: null,
+940 verbose parsed url   hostname: null,
+940 verbose parsed url   hash: null,
+940 verbose parsed url   search: null,
+940 verbose parsed url   query: null,
+940 verbose parsed url   pathname: '~3.2.8',
+940 verbose parsed url   path: '~3.2.8',
+940 verbose parsed url   href: '~3.2.8' }
+941 verbose addNamed [ 'glob', '~3.2.8' ]
+942 verbose addNamed [ null, '>=3.2.8-0 <3.3.0-0' ]
+943 silly lockFile 5bb09921-glob-3-2-8 glob@~3.2.8
+944 verbose lock glob@~3.2.8 /Users/laurahartney/.npm/5bb09921-glob-3-2-8.lock
+945 silly addNameRange { name: 'handlebars',
+945 silly addNameRange   range: '>=1.0.12-0 <1.1.0-0',
+945 silly addNameRange   hasData: false }
+946 silly addNameRange { name: 'jsdom', range: '>=0.5.6-0 <0.6.0-0', hasData: false }
+947 silly addNameRange { name: 'glob', range: '>=3.2.8-0 <3.3.0-0', hasData: false }
+948 verbose url raw commander
+949 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+950 verbose url resolved https://registry.npmjs.org/commander
+951 info trying registry request attempt 1 at 19:23:01
+952 verbose etag "F0AKGR1XTZBGV5SDCB8KFXZDS"
+953 http GET https://registry.npmjs.org/commander
+954 verbose url raw async
+955 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+956 verbose url resolved https://registry.npmjs.org/async
+957 info trying registry request attempt 1 at 19:23:02
+958 verbose etag "4G6KYDBUM95YWL2ZPD17OKKJ9"
+959 http GET https://registry.npmjs.org/async
+960 verbose url raw handlebars
+961 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+962 verbose url resolved https://registry.npmjs.org/handlebars
+963 info trying registry request attempt 1 at 19:23:02
+964 verbose etag "852WZIFTIJSU5S2WAA7M9QZXB"
+965 http GET https://registry.npmjs.org/handlebars
+966 verbose url raw jsdom
+967 verbose url resolving [ 'https://registry.npmjs.org/', './jsdom' ]
+968 verbose url resolved https://registry.npmjs.org/jsdom
+969 info trying registry request attempt 1 at 19:23:02
+970 verbose etag "6Z7L1ZAN26MWPH1FHKHGB2NGY"
+971 http GET https://registry.npmjs.org/jsdom
+972 verbose url raw glob
+973 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+974 verbose url resolved https://registry.npmjs.org/glob
+975 info trying registry request attempt 1 at 19:23:02
+976 verbose etag "DG2PHFB3FZXOOFMHXGNYOC9T9"
+977 http GET https://registry.npmjs.org/glob
+978 http 304 https://registry.npmjs.org/async
+979 silly registry.get cb [ 304,
+979 silly registry.get   { date: 'Wed, 10 Dec 2014 02:23:02 GMT',
+979 silly registry.get     server: 'Apache',
+979 silly registry.get     via: '1.1 varnish',
+979 silly registry.get     'last-modified': 'Wed, 10 Dec 2014 02:23:02 GMT',
+979 silly registry.get     'cache-control': 'max-age=60',
+979 silly registry.get     etag: '"4G6KYDBUM95YWL2ZPD17OKKJ9"',
+979 silly registry.get     age: '29',
+979 silly registry.get     'x-served-by': 'cache-jfk1035-JFK',
+979 silly registry.get     'x-cache': 'HIT',
+979 silly registry.get     'x-cache-hits': '1',
+979 silly registry.get     'x-timer': 'S1418178182.674731,VS0,VE0',
+979 silly registry.get     vary: 'Accept',
+979 silly registry.get     'content-length': '0',
+979 silly registry.get     'keep-alive': 'timeout=10, max=50',
+979 silly registry.get     connection: 'Keep-Alive' } ]
+980 verbose etag async from cache
+981 http 304 https://registry.npmjs.org/handlebars
+982 silly registry.get cb [ 304,
+982 silly registry.get   { date: 'Wed, 10 Dec 2014 02:23:02 GMT',
+982 silly registry.get     server: 'Apache',
+982 silly registry.get     via: '1.1 varnish',
+982 silly registry.get     'last-modified': 'Wed, 10 Dec 2014 02:23:02 GMT',
+982 silly registry.get     'cache-control': 'max-age=60',
+982 silly registry.get     etag: '"852WZIFTIJSU5S2WAA7M9QZXB"',
+982 silly registry.get     age: '56',
+982 silly registry.get     'x-served-by': 'cache-jfk1022-JFK',
+982 silly registry.get     'x-cache': 'HIT',
+982 silly registry.get     'x-cache-hits': '1',
+982 silly registry.get     'x-timer': 'S1418178182.674219,VS0,VE0',
+982 silly registry.get     vary: 'Accept',
+982 silly registry.get     'content-length': '0',
+982 silly registry.get     'keep-alive': 'timeout=10, max=50',
+982 silly registry.get     connection: 'Keep-Alive' } ]
+983 verbose etag handlebars from cache
+984 http 304 https://registry.npmjs.org/jsdom
+985 silly registry.get cb [ 304,
+985 silly registry.get   { date: 'Wed, 10 Dec 2014 02:23:02 GMT',
+985 silly registry.get     server: 'Apache',
+985 silly registry.get     via: '1.1 varnish',
+985 silly registry.get     'last-modified': 'Wed, 10 Dec 2014 02:23:02 GMT',
+985 silly registry.get     'cache-control': 'max-age=60',
+985 silly registry.get     etag: '"6Z7L1ZAN26MWPH1FHKHGB2NGY"',
+985 silly registry.get     age: '60',
+985 silly registry.get     'x-served-by': 'cache-jfk1035-JFK',
+985 silly registry.get     'x-cache': 'HIT',
+985 silly registry.get     'x-cache-hits': '1',
+985 silly registry.get     'x-timer': 'S1418178182.674617,VS0,VE1',
+985 silly registry.get     vary: 'Accept',
+985 silly registry.get     'content-length': '0',
+985 silly registry.get     'keep-alive': 'timeout=10, max=50',
+985 silly registry.get     connection: 'Keep-Alive' } ]
+986 verbose etag jsdom from cache
+987 http 304 https://registry.npmjs.org/commander
+988 silly registry.get cb [ 304,
+988 silly registry.get   { date: 'Wed, 10 Dec 2014 02:23:02 GMT',
+988 silly registry.get     server: 'Apache',
+988 silly registry.get     via: '1.1 varnish',
+988 silly registry.get     'last-modified': 'Wed, 10 Dec 2014 02:23:02 GMT',
+988 silly registry.get     'cache-control': 'max-age=60',
+988 silly registry.get     etag: '"F0AKGR1XTZBGV5SDCB8KFXZDS"',
+988 silly registry.get     age: '4',
+988 silly registry.get     'x-served-by': 'cache-jfk1031-JFK',
+988 silly registry.get     'x-cache': 'HIT',
+988 silly registry.get     'x-cache-hits': '1',
+988 silly registry.get     'x-timer': 'S1418178182.722860,VS0,VE0',
+988 silly registry.get     vary: 'Accept',
+988 silly registry.get     'content-length': '0',
+988 silly registry.get     'keep-alive': 'timeout=10, max=50',
+988 silly registry.get     connection: 'Keep-Alive' } ]
+989 verbose etag commander from cache
+990 http 304 https://registry.npmjs.org/glob
+991 silly registry.get cb [ 304,
+991 silly registry.get   { date: 'Wed, 10 Dec 2014 02:23:02 GMT',
+991 silly registry.get     server: 'Apache',
+991 silly registry.get     via: '1.1 varnish',
+991 silly registry.get     'last-modified': 'Wed, 10 Dec 2014 02:23:02 GMT',
+991 silly registry.get     'cache-control': 'max-age=60',
+991 silly registry.get     etag: '"DG2PHFB3FZXOOFMHXGNYOC9T9"',
+991 silly registry.get     age: '21',
+991 silly registry.get     'x-served-by': 'cache-jfk1024-JFK',
+991 silly registry.get     'x-cache': 'HIT',
+991 silly registry.get     'x-cache-hits': '1',
+991 silly registry.get     'x-timer': 'S1418178182.723155,VS0,VE0',
+991 silly registry.get     vary: 'Accept',
+991 silly registry.get     'content-length': '0',
+991 silly registry.get     'keep-alive': 'timeout=10, max=50',
+991 silly registry.get     connection: 'Keep-Alive' } ]
+992 verbose etag glob from cache
+993 silly addNameRange number 2 { name: 'handlebars',
+993 silly addNameRange   range: '>=1.0.12-0 <1.1.0-0',
+993 silly addNameRange   hasData: true }
+994 silly addNameRange versions [ 'handlebars',
+994 silly addNameRange   [ '1.0.6',
+994 silly addNameRange     '1.0.6-2',
+994 silly addNameRange     '1.0.7',
+994 silly addNameRange     '1.0.8',
+994 silly addNameRange     '1.0.9',
+994 silly addNameRange     '1.0.10',
+994 silly addNameRange     '1.0.11',
+994 silly addNameRange     '1.0.12',
+994 silly addNameRange     '1.1.0',
+994 silly addNameRange     '1.1.1',
+994 silly addNameRange     '1.1.2',
+994 silly addNameRange     '1.2.0',
+994 silly addNameRange     '1.2.1',
+994 silly addNameRange     '1.3.0',
+994 silly addNameRange     '2.0.0-alpha.1',
+994 silly addNameRange     '2.0.0-alpha.2',
+994 silly addNameRange     '2.0.0-alpha.3',
+994 silly addNameRange     '2.0.0-alpha.4',
+994 silly addNameRange     '2.0.0-beta.1',
+994 silly addNameRange     '2.0.0',
+994 silly addNameRange     '1.0.2-beta',
+994 silly addNameRange     '1.0.4-beta',
+994 silly addNameRange     '1.0.5-beta' ] ]
+995 verbose addNamed [ 'handlebars', '1.0.12' ]
+996 verbose addNamed [ '1.0.12', '1.0.12' ]
+997 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+998 verbose lock handlebars@1.0.12 /Users/laurahartney/.npm/75f4e88f-handlebars-1-0-12.lock
+999 silly addNameRange number 2 { name: 'jsdom', range: '>=0.5.6-0 <0.6.0-0', hasData: true }
+1000 silly addNameRange versions [ 'jsdom',
+1000 silly addNameRange   [ '0.0.1',
+1000 silly addNameRange     '0.1.2',
+1000 silly addNameRange     '0.1.4',
+1000 silly addNameRange     '0.1.5',
+1000 silly addNameRange     '0.1.6',
+1000 silly addNameRange     '0.1.7',
+1000 silly addNameRange     '0.1.8',
+1000 silly addNameRange     '0.1.9',
+1000 silly addNameRange     '0.1.10',
+1000 silly addNameRange     '0.1.11',
+1000 silly addNameRange     '0.1.12',
+1000 silly addNameRange     '0.1.13',
+1000 silly addNameRange     '0.1.15',
+1000 silly addNameRange     '0.1.16',
+1000 silly addNameRange     '0.1.17',
+1000 silly addNameRange     '0.1.18',
+1000 silly addNameRange     '0.1.19',
+1000 silly addNameRange     '0.1.20',
+1000 silly addNameRange     '0.1.21',
+1000 silly addNameRange     '0.1.22',
+1000 silly addNameRange     '0.1.23',
+1000 silly addNameRange     '0.2.0',
+1000 silly addNameRange     '0.2.1',
+1000 silly addNameRange     '0.2.2',
+1000 silly addNameRange     '0.2.3',
+1000 silly addNameRange     '0.2.4',
+1000 silly addNameRange     '0.2.5',
+1000 silly addNameRange     '0.2.6',
+1000 silly addNameRange     '0.2.7',
+1000 silly addNameRange     '0.2.8',
+1000 silly addNameRange     '0.2.9',
+1000 silly addNameRange     '0.2.10',
+1000 silly addNameRange     '0.2.11',
+1000 silly addNameRange     '0.2.12',
+1000 silly addNameRange     '0.2.13',
+1000 silly addNameRange     '0.2.14',
+1000 silly addNameRange     '0.2.15',
+1000 silly addNameRange     '0.2.16',
+1000 silly addNameRange     '0.2.17',
+1000 silly addNameRange     '0.2.18',
+1000 silly addNameRange     '0.2.19',
+1000 silly addNameRange     '0.3.0',
+1000 silly addNameRange     '0.3.1',
+1000 silly addNameRange     '0.3.2',
+1000 silly addNameRange     '0.3.3',
+1000 silly addNameRange     '0.3.4',
+1000 silly addNameRange     '0.4.0',
+1000 silly addNameRange     '0.4.1',
+1000 silly addNameRange     '0.4.2',
+1000 silly addNameRange     '0.5.0',
+1000 silly addNameRange     '0.5.1',
+1000 silly addNameRange     '0.5.2',
+1000 silly addNameRange     '0.5.3',
+1000 silly addNameRange     '0.5.4',
+1000 silly addNameRange     '0.5.5',
+1000 silly addNameRange     '0.5.6',
+1000 silly addNameRange     '0.5.7',
+1000 silly addNameRange     '0.6.0',
+1000 silly addNameRange     '0.6.1',
+1000 silly addNameRange     '0.6.2',
+1000 silly addNameRange     '0.6.3',
+1000 silly addNameRange     '0.6.4',
+1000 silly addNameRange     '0.6.5',
+1000 silly addNameRange     '0.7.0',
+1000 silly addNameRange     '0.8.0',
+1000 silly addNameRange     '0.8.1',
+1000 silly addNameRange     '0.8.2',
+1000 silly addNameRange     '0.8.3',
+1000 silly addNameRange     '0.8.4',
+1000 silly addNameRange     '0.8.5',
+1000 silly addNameRange     '0.8.6',
+1000 silly addNameRange     '0.8.7',
+1000 silly addNameRange     '0.8.8',
+1000 silly addNameRange     '0.8.9',
+1000 silly addNameRange     '0.8.10',
+1000 silly addNameRange     '0.8.11',
+1000 silly addNameRange     '0.9.0',
+1000 silly addNameRange     '0.10.0',
+1000 silly addNameRange     '0.10.1',
+1000 silly addNameRange     '0.10.2',
+1000 silly addNameRange     '0.10.3',
+1000 silly addNameRange     '0.10.4',
+1000 silly addNameRange     '0.10.5',
+1000 silly addNameRange     '0.10.6',
+1000 silly addNameRange     '0.11.0',
+1000 silly addNameRange     '0.11.1',
+1000 silly addNameRange     '1.0.0-pre.1',
+1000 silly addNameRange     '1.0.0-pre.3',
+1000 silly addNameRange     '1.0.0-pre.4',
+1000 silly addNameRange     '1.0.0-pre.5',
+1000 silly addNameRange     '1.0.0-pre.6',
+1000 silly addNameRange     '1.0.0-pre.7',
+1000 silly addNameRange     '1.0.0',
+1000 silly addNameRange     '1.0.1',
+1000 silly addNameRange     '1.0.2',
+1000 silly addNameRange     '1.0.3',
+1000 silly addNameRange     '1.1.0',
+1000 silly addNameRange     '1.2.0',
+1000 silly addNameRange     '1.2.1',
+1000 silly addNameRange     '1.2.2',
+1000 silly addNameRange     '1.2.3',
+1000 silly addNameRange     '1.3.0',
+1000 silly addNameRange     '1.3.1',
+1000 silly addNameRange     '1.3.2',
+1000 silly addNameRange     '1.4.0',
+1000 silly addNameRange     '1.4.1' ] ]
+1001 verbose addNamed [ 'jsdom', '0.5.7' ]
+1002 verbose addNamed [ '0.5.7', '0.5.7' ]
+1003 silly lockFile 128cd670-jsdom-0-5-7 jsdom@0.5.7
+1004 verbose lock jsdom@0.5.7 /Users/laurahartney/.npm/128cd670-jsdom-0-5-7.lock
+1005 silly lockFile d8129da7-npmjs-org-async-async-0-1-22-tgz https://registry.npmjs.org/async/-/async-0.1.22.tgz
+1006 verbose lock https://registry.npmjs.org/async/-/async-0.1.22.tgz /Users/laurahartney/.npm/d8129da7-npmjs-org-async-async-0-1-22-tgz.lock
+1007 silly lockFile 998b3f7e-handlebars-handlebars-1-0-12-tgz https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+1008 verbose lock https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz /Users/laurahartney/.npm/998b3f7e-handlebars-handlebars-1-0-12-tgz.lock
+1009 silly addNameRange number 2 { name: 'glob', range: '>=3.2.8-0 <3.3.0-0', hasData: true }
+1010 silly addNameRange versions [ 'glob',
+1010 silly addNameRange   [ '1.1.0',
+1010 silly addNameRange     '2.0.9',
+1010 silly addNameRange     '2.0.8',
+1010 silly addNameRange     '2.0.7',
+1010 silly addNameRange     '2.1.0',
+1010 silly addNameRange     '3.0.0',
+1010 silly addNameRange     '3.0.1',
+1010 silly addNameRange     '3.1.0',
+1010 silly addNameRange     '3.1.1',
+1010 silly addNameRange     '3.1.2',
+1010 silly addNameRange     '3.1.3',
+1010 silly addNameRange     '3.1.4',
+1010 silly addNameRange     '3.1.5',
+1010 silly addNameRange     '3.1.6',
+1010 silly addNameRange     '3.1.7',
+1010 silly addNameRange     '3.1.9',
+1010 silly addNameRange     '3.1.10',
+1010 silly addNameRange     '3.1.11',
+1010 silly addNameRange     '3.1.12',
+1010 silly addNameRange     '3.1.13',
+1010 silly addNameRange     '3.1.14',
+1010 silly addNameRange     '3.1.15',
+1010 silly addNameRange     '3.1.16',
+1010 silly addNameRange     '3.1.17',
+1010 silly addNameRange     '3.1.18',
+1010 silly addNameRange     '3.1.19',
+1010 silly addNameRange     '3.1.20',
+1010 silly addNameRange     '3.1.21',
+1010 silly addNameRange     '3.2.0',
+1010 silly addNameRange     '3.2.1',
+1010 silly addNameRange     '3.2.3',
+1010 silly addNameRange     '3.2.4',
+1010 silly addNameRange     '3.2.5',
+1010 silly addNameRange     '3.2.6',
+1010 silly addNameRange     '3.2.7',
+1010 silly addNameRange     '3.2.8',
+1010 silly addNameRange     '3.2.9',
+1010 silly addNameRange     '3.2.10',
+1010 silly addNameRange     '3.2.11',
+1010 silly addNameRange     '4.0.0',
+1010 silly addNameRange     '4.0.1',
+1010 silly addNameRange     '4.0.2',
+1010 silly addNameRange     '4.0.3',
+1010 silly addNameRange     '4.0.4',
+1010 silly addNameRange     '4.0.5',
+1010 silly addNameRange     '4.0.6',
+1010 silly addNameRange     '4.1.2-beta',
+1010 silly addNameRange     '4.1.2',
+1010 silly addNameRange     '4.1.3',
+1010 silly addNameRange     '4.1.4',
+1010 silly addNameRange     '4.1.5',
+1010 silly addNameRange     '4.1.6',
+1010 silly addNameRange     '4.2.0',
+1010 silly addNameRange     '4.2.1',
+1010 silly addNameRange     '4.2.2',
+1010 silly addNameRange     '4.3.0',
+1010 silly addNameRange     '4.3.1' ] ]
+1011 verbose addNamed [ 'glob', '3.2.11' ]
+1012 verbose addNamed [ '3.2.11', '3.2.11' ]
+1013 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+1014 verbose lock glob@3.2.11 /Users/laurahartney/.npm/3fffafa6-glob-3-2-11.lock
+1015 verbose addRemoteTarball [ 'https://registry.npmjs.org/async/-/async-0.1.22.tgz',
+1015 verbose addRemoteTarball   '0fc1aaa088a0e3ef0ebe2d8831bab0dcf8845061' ]
+1016 silly lockFile 8d3a870b-rg-commander-commander-1-1-1-tgz https://registry.npmjs.org/commander/-/commander-1.1.1.tgz
+1017 verbose lock https://registry.npmjs.org/commander/-/commander-1.1.1.tgz /Users/laurahartney/.npm/8d3a870b-rg-commander-commander-1-1-1-tgz.lock
+1018 verbose addRemoteTarball [ 'https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz',
+1018 verbose addRemoteTarball   '18c6d3440c35e91b19b3ff582b9151ab4985d4fc' ]
+1019 silly lockFile d8129da7-npmjs-org-async-async-0-1-22-tgz https://registry.npmjs.org/async/-/async-0.1.22.tgz
+1020 silly lockFile d8129da7-npmjs-org-async-async-0-1-22-tgz https://registry.npmjs.org/async/-/async-0.1.22.tgz
+1021 silly lockFile 998b3f7e-handlebars-handlebars-1-0-12-tgz https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+1022 silly lockFile 998b3f7e-handlebars-handlebars-1-0-12-tgz https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+1023 verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-1.1.1.tgz',
+1023 verbose addRemoteTarball   '50d1651868ae60eccff0a2d9f34595376bc6b041' ]
+1024 silly lockFile 09d21715-async-0-1-22 async@0.1.22
+1025 silly lockFile 09d21715-async-0-1-22 async@0.1.22
+1026 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+1027 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+1028 verbose about to build /usr/local/lib/node_modules/can-compile
+1029 info /usr/local/lib/node_modules/can-compile unbuild
+1030 info preuninstall can-compile@0.7.1
+1031 silly lockFile 8d3a870b-rg-commander-commander-1-1-1-tgz https://registry.npmjs.org/commander/-/commander-1.1.1.tgz
+1032 silly lockFile 8d3a870b-rg-commander-commander-1-1-1-tgz https://registry.npmjs.org/commander/-/commander-1.1.1.tgz
+1033 silly lockFile de76c6ce-handlebars-1-0-12 handlebars@~1.0.12
+1034 silly lockFile de76c6ce-handlebars-1-0-12 handlebars@~1.0.12
+1035 silly lockFile 128cd670-jsdom-0-5-7 jsdom@0.5.7
+1036 silly lockFile 128cd670-jsdom-0-5-7 jsdom@0.5.7
+1037 silly lockFile e890879a-commander-1-1-1 commander@1.1.1
+1038 silly lockFile e890879a-commander-1-1-1 commander@1.1.1
+1039 silly lockFile 183024bf-jsdom-0-5-6 jsdom@~0.5.6
+1040 silly lockFile 183024bf-jsdom-0-5-6 jsdom@~0.5.6
+1041 info uninstall can-compile@0.7.1
+1042 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+1043 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+1044 silly lockFile 5bb09921-glob-3-2-8 glob@~3.2.8
+1045 silly lockFile 5bb09921-glob-3-2-8 glob@~3.2.8
+1046 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild can-compile@0.7.1
+1047 verbose /usr/local/bin,[object Object] binRoot
+1048 info postuninstall can-compile@0.7.1
+1049 error Error: ENOTDIR, mkdir '/Users/laurahartney/tmp/npm-48122-QPCQLIch/registry.npmjs.org/async/-'
+1050 error If you need help, you may report this *entire* log,
+1050 error including the npm and node versions, at:
+1050 error     <http://github.com/npm/npm/issues>
+1051 error System Darwin 13.4.0
+1052 error command "node" "/usr/local/bin/npm" "install" "can-compile" "-g"
+1053 error cwd /Users/laurahartney/code/web-starter-kit-master
+1054 error node -v v0.10.29
+1055 error npm -v 1.4.14
+1056 error path /Users/laurahartney/tmp/npm-48122-QPCQLIch/registry.npmjs.org/async/-
+1057 error code ENOTDIR
+1058 error errno 27
+1059 verbose exit [ 27, true ]
