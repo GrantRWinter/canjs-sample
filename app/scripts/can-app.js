@@ -2,9 +2,9 @@ $(document).ready(function(){
         can.fixture({
     "GET /services/todos": function(){
         return [
-            { id: 0, name: "Poster", quantityAvailable:0, countIn: 0, add: 0, totalIn: 12, comp: 0, countOut: 0,  totalSold: 0,  completed: false },
-            { id: 1, name: "mow lawn", quantityAvailable:0, countIn: 0, add: 0, totalIn: 12, comp: 0, countOut: 0,  totalSold: 0,  completed: false },
-            { id: 2, name: "pick up laundry", quantityAvailable:0, countIn: 0, add: 0, totalIn: 12, comp: 0, countOut: 0,  totalSold: 0,  completed: false }
+            { id: 0, name: "Poster", quantityAvailable: 0, countIn: 12, add: 0, totalIn: 12, comp: 0, countOut: 5,  totalSold: 7, price: 10, gross: 70, completed: false },
+            { id: 1, name: "Tee-shirt", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 9, comp: 0, countOut: 0,  totalSold: 0, price: 30, gross: 60, completed: false },
+            { id: 2, name: "Hoodie", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 8, comp: 0, countOut: 0,  totalSold: 0, price: 60, gross: 180, completed: false }
         ]
     },
     "POST /services/todos": function(){
@@ -92,11 +92,35 @@ can.Component.extend({
         edit: function(todo){
             todo.attr("editing", true)
         },
-        updateTodo: function(todo, el){
+        updateName: function(todo, el){
             todo.attr("name", el.val());
-
+        },
+        
+        updateQuantityAvailable: function(todo, el){
+            todo.attr("quatityAvailable", el.val());
+            
+        },
+        updateCountIn: function(todo, el){
+            todo.attr("countIn", el.val());
+            todo.attr("editing", false)
+        },
+        updateAdd: function(todo, el){
+            todo.attr("add", el.val());
+            todo.attr("editing", false)
+        },
+        updateTotalIn: function(todo, el){
             todo.attr("totalIn", el.val());
-            todo.attr("editing",false)
+        },
+        updateComp: function(todo, el){
+            todo.attr("comp", el.val());
+            todo.attr("editing", false)
+        },
+        updateCountOut: function(todo, el){
+            todo.attr("countOut", el.val());
+            todo.attr("editing", false)
+        },
+        updateTotalSold: function(todo, el){
+            todo.attr("gross", el.val());
         }
     },
     events: {

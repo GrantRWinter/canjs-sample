@@ -83,30 +83,74 @@
           class="toggle" 
           type="checkbox"
           can-value='completed'/>
-        <label>{{name}}</label>
+        
                                 
-        <button class="destroy"
-            can-click="destroy"></button>
       </div>
-      <input class="edit" 
-             type="text" 
-             value="{{name}}" 
-             can-blur='updateTodo'
-             can-enter='updateTodo'
-             can-mouseleave="updateTodo">
+      <label>{{name}} name</label>
+      <label class="grey">{{quantityAvailable}} quantity available</label>
+      
+
       <div class="view" can-click='edit'>
-        
-        <label>{{totalIn}}</label>
-        
-        <button class="destroy"
-            can-click="destroy"></button>
+        <label>{{countIn}} count in</label>
       </div>
       <input class="edit" 
              type="text" 
-             value="{{totalIn}}" 
-             can-blur='updateTodo'
-             can-enter='updateTodo'
-             can-mouseleave="updateTodo">
+             value="{{countIn}}" 
+             can-blur='updateCountIn'
+             can-enter='updateCountIn'
+             can-mouseleave="updateCountIn">
+
+      <div class="view" can-click='edit'>
+        <label class="green">{{add}} add</label>
+      </div>
+      <input class="edit green" 
+             type="text" 
+             value="{{add}}" 
+             can-blur='updateAdd'
+             can-enter='updateAdd'
+             can-mouseleave="updateAdd">
+
+      
+        
+      <label class="blue">{{totalIn}} total in</label>
+        
+
+      <div class="view" can-click='edit'>
+        <label class="red">{{comp}} comp</label>
+      </div>
+      <input class="edit" 
+             type="text" 
+             value="{{comp}}" 
+             can-blur='updateComp'
+             can-enter='updateComp'
+             can-mouseleave="updateComp">
+
+      <div class="view" can-click='edit'>
+        <label>{{countOut}} count out</label>
+      </div>
+      <input class="edit" 
+             type="text" 
+             value="{{countOut}}" 
+             can-blur='updateCountOut'
+             can-enter='updateCountOut'
+             can-mouseleave="updateCountOut">
+ 
+      <label class="blue">{{totalSold}} total sold</label>
+  
+      <label class="blue">${{price}} price</label>
+
+      <div class="view" can-click='edit'>
+        <label>${{gross}}</label>
+      </div>
+      <input class="edit" 
+             type="text" 
+             value="{{gross}}" 
+             can-blur='updateGross'
+             can-enter='updateGross'
+             can-mouseleave="updateGross">
+        
+      <button class="destroy"
+            can-click="destroy"></button>
     </li>
   {{/each}}
 </ul>
