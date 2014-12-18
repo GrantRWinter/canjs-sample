@@ -102,26 +102,31 @@ can.Component.extend({
         },
         updateCountIn: function(todo, el){
             todo.attr("countIn", el.val());
+            add = todo.attr( "add" );
+            todo.attr("totalIn", parseInt(el.val()) + parseInt(add) )
             todo.attr("editing", false)
         },
         updateAdd: function(todo, el){
-            todo.attr("add", el.val());
-            todo.attr("editing", false)
-        },
-        updateTotalIn: function(todo, el){
-            todo.attr("totalIn", el.val());
+            todo.attr( "add", el.val() );
+            countIn = parseInt(todo.attr( "countIn" ));
+            todo.attr( "totalIn", parseInt(el.val()) + countIn); 
+            todo.attr( "editing", false );
         },
         updateComp: function(todo, el){
             todo.attr("comp", el.val());
+            countOut = parseInt(todo.attr( "countOut" ));
+            totalIn = parseInt(todo.attr( "totalIn" ));
+            totalSold = todo.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
+            todo.attr( "gross", totalSold )
             todo.attr("editing", false)
         },
         updateCountOut: function(todo, el){
             todo.attr("countOut", el.val());
+            comp = parseInt(todo.attr( "comp" ));
+            totalIn = parseInt(todo.attr( "totalIn" ));
+            todo.attr("totalSold", totalIn - comp - parseInt( el.val() ));
             todo.attr("editing", false)
         },
-        updateTotalSold: function(todo, el){
-            todo.attr("gross", el.val());
-        }
     },
     events: {
         "{Todo} created": function(Todo, ev, newTodo){

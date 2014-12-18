@@ -91,7 +91,7 @@
       
 
       <div class="view" can-click='edit'>
-        <label>{{countIn}} count in</label>
+        <label id="countIn">{{countIn}} count</label>
       </div>
       <input class="edit" 
              type="text" 
@@ -101,7 +101,7 @@
              can-mouseleave="updateCountIn">
 
       <div class="view" can-click='edit'>
-        <label class="green">{{add}} add</label>
+        <label id=class="green">{{add}} add</label>
       </div>
       <input class="edit green" 
              type="text" 
@@ -111,10 +111,12 @@
              can-mouseleave="updateAdd">
 
       
+        <label class="green" can-value='stuff'>{{totalIn}} total in</label>
+      
+      
         
-      <label class="blue">{{totalIn}} total in</label>
+      
         
-
       <div class="view" can-click='edit'>
         <label class="red">{{comp}} comp</label>
       </div>
@@ -138,16 +140,8 @@
       <label class="blue">{{totalSold}} total sold</label>
   
       <label class="blue">${{price}} price</label>
-
-      <div class="view" can-click='edit'>
+         
         <label>${{gross}}</label>
-      </div>
-      <input class="edit" 
-             type="text" 
-             value="{{gross}}" 
-             can-blur='updateGross'
-             can-enter='updateGross'
-             can-mouseleave="updateGross">
         
       <button class="destroy"
             can-click="destroy"></button>
