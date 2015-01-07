@@ -1,1 +1,1 @@
-Can Js Sample app based on Google Web Starter Kit
+CanJs Sample app based on Google Web Starter Kit

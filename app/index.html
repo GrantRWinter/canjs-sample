@@ -74,33 +74,30 @@
 </script>
 
 <script type='text/mustache' id='todos-list-template'>
-<ul id="todo-list">
+<table id="todo-list">
   {{#todos}}
-    <li class="todo {{#completed}}completed{{/completed}} {{#editing}}editing{{/editing}}" 
-      >
+    <tr class="todo {{#completed}}completed{{/completed}} {{#editing}}editing{{/editing}}">
       <div class="view" can-click='edit'>
         <input 
           class="toggle" 
           type="checkbox"
-          can-value='completed'/>
-        
-                                
+          can-value='completed'/>                    
       </div>
-      <label>{{name}} name</label>
-      <label class="grey">{{quantityAvailable}} quantity available</label>
+      <!-- <label>{{name}} name</label> -->
+     <!-- <label class="grey">{{quantityAvailable}} quantity available</label> -->
       
 
-      <div class="view" can-click='edit'>
-        <label id="countIn">{{countIn}} count</label>
-      </div>
-      <input class="edit" 
+      <td class="view" can-click='edit'>
+        <label id="countIn">{{countIn}} count in</label>
+      </td>
+      <td><input class="edit" 
              type="text" 
              value="{{countIn}}" 
              can-blur='updateCountIn'
              can-enter='updateCountIn'
              can-mouseleave="updateCountIn">
-
-      <div class="view" can-click='edit'>
+      </td>
+     <!-- <div class="view" can-click='edit'>
         <label id=class="green">{{add}} add</label>
       </div>
       <input class="edit green" 
@@ -141,13 +138,13 @@
   
       <label class="blue">${{price}} price</label>
          
-        <label>${{gross}}</label>
+        <label>${{gross}}</label> -->
         
       <button class="destroy"
             can-click="destroy"></button>
-    </li>
+    </tr>
   {{/each}}
-</ul>
+</table>
 </script>
 <div id='app'></div>
   

@@ -2,9 +2,9 @@ $(document).ready(function(){
         can.fixture({
     "GET /services/todos": function(){
         return [
-            { id: 0, name: "Poster", quantityAvailable: 0, countIn: 12, add: 0, totalIn: 12, comp: 0, countOut: 5,  totalSold: 7, price: 10, gross: 70, completed: false },
-            { id: 1, name: "Tee-shirt", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 9, comp: 0, countOut: 0,  totalSold: 0, price: 30, gross: 60, completed: false },
-            { id: 2, name: "Hoodie", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 8, comp: 0, countOut: 0,  totalSold: 0, price: 60, gross: 180, completed: false }
+            { id: 0, name: "Poster", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 0, comp: 0, countOut: 0,  totalSold: 0, price: 10, gross: 0, completed: false },
+            { id: 1, name: "Tee-shirt", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 9, comp: 0, countOut: 0,  totalSold: 0, price: 30, gross: 0, completed: false },
+            { id: 2, name: "Hoodie", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 8, comp: 0, countOut: 0,  totalSold: 0, price: 60, gross: 0, completed: false }
         ]
     },
     "POST /services/todos": function(){
@@ -101,15 +101,21 @@ can.Component.extend({
             
         },
         updateCountIn: function(todo, el){
-            todo.attr("countIn", el.val());
-            add = todo.attr( "add" );
-            todo.attr("totalIn", parseInt(el.val()) + parseInt(add) )
+            var countIn = todo.attr("countIn", el.val());
+            var add = todo.attr( "add" );
+            var totalIn = todo.attr("totalIn", parseInt(el.val()) + parseInt(add) );
+            var countOut = parseInt(todo.attr("countOut") );
+            var comp = parseInt(todo.attr("comp") );
+            var totalSold = totalIn - countOut - comp;
             todo.attr("editing", false)
         },
         updateAdd: function(todo, el){
-            todo.attr( "add", el.val() );
-            countIn = parseInt(todo.attr( "countIn" ));
-            todo.attr( "totalIn", parseInt(el.val()) + countIn); 
+            var add = todo.attr( "add", el.val() );
+            var countIn = parseInt(todo.attr( "countIn" ));
+            var totalIn = todo.attr("totalIn", parseInt(countIn + add) );
+            var countOut = parseInt(todo.attr("countOut") );
+            var comp = parseInt(todo.attr("comp") );
+            var totalSold = totalIn - countOut - comp;
             todo.attr( "editing", false );
         },
         updateComp: function(todo, el){
@@ -117,16 +123,19 @@ can.Component.extend({
             countOut = parseInt(todo.attr( "countOut" ));
             totalIn = parseInt(todo.attr( "totalIn" ));
             totalSold = todo.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
-            todo.attr( "gross", totalSold )
+            gross = parseInt(todo.attr("totalSold") * parseInt(todo.attr("price")));
+            todo.attr( "gross", gross )
             todo.attr("editing", false)
         },
         updateCountOut: function(todo, el){
             todo.attr("countOut", el.val());
             comp = parseInt(todo.attr( "comp" ));
             totalIn = parseInt(todo.attr( "totalIn" ));
+            totalSold = todo.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
+            gross = parseInt(todo.attr("totalSold") * parseInt(todo.attr("price")));
             todo.attr("totalSold", totalIn - comp - parseInt( el.val() ));
             todo.attr("editing", false)
-        },
+        }
     },
     events: {
         "{Todo} created": function(Todo, ev, newTodo){
