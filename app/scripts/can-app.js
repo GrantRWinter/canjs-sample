@@ -104,18 +104,13 @@ can.Component.extend({
             var countIn = item.attr("countIn", el.val());
             var add = item.attr( "add" );
             var totalIn = item.attr("totalIn", parseInt(el.val()) + parseInt(add) );
-            var countOut = parseInt(item.attr("countOut") );
-            var comp = parseInt(item.attr("comp") );
-            var totalSold = totalIn - countOut - comp;
             item.attr("editing", false)
         },
         updateAdd: function(item, el){
             var add = item.attr( "add", el.val() );
             var countIn = parseInt(item.attr( "countIn" ));
-            var totalIn = item.attr("totalIn", parseInt(countIn + add) );
-            var countOut = parseInt(item.attr("countOut") );
-            var comp = parseInt(item.attr("comp") );
-            var totalSold = totalIn - countOut - comp;
+            var totalIn = item.attr("totalIn", parseInt(el.val()) + parseInt(countIn) );
+            
             item.attr( "editing", false );
         },
         updateComp: function(item, el){
