@@ -36,26 +36,26 @@
   <body>
     
 
-<script type='text/mustache' id='todos-app-template'>
+<script type='text/mustache' id='items-app-template'>
 
-<todos-app>
-<section id="todoapp">
+<items-app>
+<section id="itemapp">
   <header id="header">
     <h1>Merchandise</h1>
-    <todos-create></todos-create>
+    
   </header>
   
   <section id="main" class="">
     <input id="toggle-all" type="checkbox">
     <label for="toggle-all">Mark all as complete</label>
-    <todos-list todos='displayedTodos'></todos-list>
+    <items-list items='displayedTodos'></items-list>
   </section>
   <footer id="footer" class="">
-    <span id="todo-count">
-      <strong>{{todos.remainingCount}}</strong> {{plural "item" todos.remainingCount}} left
+    <span id="item-count">
+      <strong>{{items.remainingCount}}</strong> {{plural "item" items.remainingCount}} left
 
     </span>
-    <span ><strong>{{ todos.calculatedNumber }}</strong></span>
+    <span ><strong>{{ items.calculatedNumber }}</strong></span>
     <ul id="filters">
     
       <li>{{{link "All" undefined}}}</li>
@@ -63,85 +63,98 @@
       <li>{{{link "Completed" "completed"}}}</li>
     </ul>
     <button id="clear-completed" 
-        class="{{^todos.completedCount}}hidden{{/todos.completedCount}}",
-        can-click="todos.destroyCompleted">
-      Clear completed ({{todos.completedCount}})
+        class="{{^items.completedCount}}hidden{{/items.completedCount}}",
+        can-click="items.destroyCompleted">
+      Clear completed ({{items.completedCount}})
     </button>
   </footer>
 </section>
-</todos-app>
+</items-app>
 
 </script>
 
-<script type='text/mustache' id='todos-list-template'>
-<table id="todo-list">
-  {{#todos}}
-    <tr class="todo {{#completed}}completed{{/completed}} {{#editing}}editing{{/editing}}">
-      <div class="view" can-click='edit'>
-        <input 
-          class="toggle" 
-          type="checkbox"
-          can-value='completed'/>                    
-      </div>
-      <!-- <label>{{name}} name</label> -->
-     <!-- <label class="grey">{{quantityAvailable}} quantity available</label> -->
+<script type='text/mustache' id='items-list-template'>
+<table id="item-list">
+  {{#items}}
+    <tr class="item {{#completed}}completed{{/completed}} {{#editing}}editing{{/editing}}">
+      
+      
+      <td>
+        <span>{{name}} name</span>
+      </td>
+      <td>
+        <span class="grey">{{quantityAvailable}} quantity available</span> 
+     </td>
       
 
-      <td class="view" can-click='edit'>
-        <label id="countIn">{{countIn}} count in</label>
-      </td>
-      <td><input class="edit" 
+      <td>
+        <span class=view can-click='edit' id="countIn">{{countIn}} count in</span>
+      
+      <input class="edit" 
              type="text" 
              value="{{countIn}}" 
-             can-blur='updateCountIn'
+             
              can-enter='updateCountIn'
-             can-mouseleave="updateCountIn">
+             >
       </td>
-     <!-- <div class="view" can-click='edit'>
-        <label id=class="green">{{add}} add</label>
-      </div>
-      <input class="edit green" 
-             type="text" 
-             value="{{add}}" 
-             can-blur='updateAdd'
-             can-enter='updateAdd'
-             can-mouseleave="updateAdd">
 
-      
-        <label class="green" can-value='stuff'>{{totalIn}} total in</label>
-      
-      
-        
-      
-        
-      <div class="view" can-click='edit'>
-        <label class="red">{{comp}} comp</label>
-      </div>
-      <input class="edit" 
-             type="text" 
-             value="{{comp}}" 
-             can-blur='updateComp'
-             can-enter='updateComp'
-             can-mouseleave="updateComp">
 
-      <div class="view" can-click='edit'>
-        <label>{{countOut}} count out</label>
-      </div>
-      <input class="edit" 
-             type="text" 
-             value="{{countOut}}" 
-             can-blur='updateCountOut'
-             can-enter='updateCountOut'
-             can-mouseleave="updateCountOut">
- 
-      <label class="blue">{{totalSold}} total sold</label>
-  
-      <label class="blue">${{price}} price</label>
-         
-        <label>${{gross}}</label> -->
+      <td >
+        <span class="view" can-click='edit' id=class="green">{{add}} add</span>
+      
+        <input class="edit" 
+               type="text" 
+               value="{{add}}" 
+               can-blur='updateAdd'
+               can-enter='updateAdd'
+               can-mouseleave="updateAdd">
+      </td>
+
+      <td>
+        <p class="green">{{totalIn}} total in</p>
+      </td>
+      
         
+      
+        
+      <td>
+        <span class="view red" can-click='edit'>{{comp}} comp</span>
+     
+        <input class="edit red" 
+               type="text" 
+               value="{{comp}}" 
+               can-blur='updateComp'
+               can-enter='updateComp'
+               can-mouseleave="updateComp">
+      </td>
+
+      <td >
+        <span class="view" can-click='edit'>{{countOut}} count out</span>
+      
+        <input class="edit" 
+          type="text" 
+          value="{{countOut}}" 
+          can-blur='updateCountOut'
+          can-enter='updateCountOut'
+          can-mouseleave="updateCountOut">
+      </td>
+      
+      <td>
+        <span class="blue">{{totalSold}} total sold</span>
+      </td>
+
+      <td>
+        <span class="blue">${{price}} price</span>
+      </td>  
+
+      <td>   
+        <span>${{gross}}</span>
+      </td> 
+      
+      <td>  
       <button class="destroy"
             can-click="destroy"></button>
+      </td>      
     </tr>
   {{/each}}
 </table>

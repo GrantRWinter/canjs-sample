@@ -1,57 +1,57 @@
 $(document).ready(function(){
         can.fixture({
-    "GET /services/todos": function(){
+    "GET /services/items": function(){
         return [
             { id: 0, name: "Poster", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 0, comp: 0, countOut: 0,  totalSold: 0, price: 10, gross: 0, completed: false },
             { id: 1, name: "Tee-shirt", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 9, comp: 0, countOut: 0,  totalSold: 0, price: 30, gross: 0, completed: false },
             { id: 2, name: "Hoodie", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 8, comp: 0, countOut: 0,  totalSold: 0, price: 60, gross: 0, completed: false }
         ]
     },
-    "POST /services/todos": function(){
+    "POST /services/items": function(){
         console.log("you just created an item");
         return {
             id: Math.floor( Math.random()*10000 )
         }
     },
-    "DELETE /services/todos/{id}": function(){
+    "DELETE /services/items/{id}": function(){
         return {}
     },
-    "PUT /services/todos/{id}": function(){
+    "PUT /services/items/{id}": function(){
         return {}
     }
 });
 
 
-Todo = can.Model.extend({
-    findAll: "/services/todos",
-    create: "/services/todos",
-    destroy: "/services/todos/{id}",
-    update: "/services/todos/{id}"
+Merch = can.Model.extend({
+    findAll: "/services/items",
+    create: "/services/items",
+    destroy: "/services/items/{id}",
+    update: "/services/items/{id}"
 },{})
 
-Todo.List = can.Model.List.extend({
-    Map: Todo
+Merch.List = can.Model.List.extend({
+    Map: Merch
 },{
     filter: function(tester){
-        var todos = new Todo.List();
-        this.each(function(todo){
-            if(tester(todo)){
-                todos.push(todo)
+        var items = new Merch.List();
+        this.each(function(item){
+            if(tester(item)){
+                items.push(item)
             }
         })
-        return todos;
+        return items;
     },
     remainingCount: function(){
         return this.remaining().length;
     },
     remaining: function(){
-        return this.filter(function(todo){
-            return !todo.attr('completed')
+        return this.filter(function(item){
+            return !item.attr('completed')
         })
     },
     completed: function(){
-        return this.filter(function(todo){
-            return todo.attr('completed')
+        return this.filter(function(item){
+            return item.attr('completed')
         })
     },
     completedCount: function(){
@@ -61,21 +61,21 @@ Todo.List = can.Model.List.extend({
         return this.remaining().length + 4
     },
     destroyCompleted: function(){
-        this.completed().each(function(todo){
-            todo.destroy()
+        this.completed().each(function(item){
+            item.destroy()
         })
     }
 })
 
 
 can.Component.extend({
-    tag: "todos-create",
-    template: '<input id="new-todo" '+
+    tag: "items-create",
+    template: '<input id="new-item" '+
         'placeholder="What needs to be done?">',
     events : {
         "input keyup": function( el, ev ) {
             if(ev.keyCode == 13){
-                new Todo({
+                new Merch({
                     name: el.val(),
                     completed: false
                 }).save();
@@ -86,76 +86,76 @@ can.Component.extend({
 });
 
 can.Component.extend({
-    tag: "todos-list",
-    template: can.view("todos-list-template"),
+    tag: "items-list",
+    template: can.view("items-list-template"),
     scope: {
-        edit: function(todo){
-            todo.attr("editing", true)
+        edit: function(item){
+            item.attr("editing", true)
         },
-        updateName: function(todo, el){
-            todo.attr("name", el.val());
+        updateName: function(item, el){
+            item.attr("name", el.val());
         },
         
-        updateQuantityAvailable: function(todo, el){
-            todo.attr("quatityAvailable", el.val());
+        updateQuantityAvailable: function(item, el){
+            item.attr("quatityAvailable", el.val());
             
         },
-        updateCountIn: function(todo, el){
-            var countIn = todo.attr("countIn", el.val());
-            var add = todo.attr( "add" );
-            var totalIn = todo.attr("totalIn", parseInt(el.val()) + parseInt(add) );
-            var countOut = parseInt(todo.attr("countOut") );
-            var comp = parseInt(todo.attr("comp") );
+        updateCountIn: function(item, el){
+            var countIn = item.attr("countIn", el.val());
+            var add = item.attr( "add" );
+            var totalIn = item.attr("totalIn", parseInt(el.val()) + parseInt(add) );
+            var countOut = parseInt(item.attr("countOut") );
+            var comp = parseInt(item.attr("comp") );
             var totalSold = totalIn - countOut - comp;
-            todo.attr("editing", false)
+            item.attr("editing", false)
         },
-        updateAdd: function(todo, el){
-            var add = todo.attr( "add", el.val() );
-            var countIn = parseInt(todo.attr( "countIn" ));
-            var totalIn = todo.attr("totalIn", parseInt(countIn + add) );
-            var countOut = parseInt(todo.attr("countOut") );
-            var comp = parseInt(todo.attr("comp") );
+        updateAdd: function(item, el){
+            var add = item.attr( "add", el.val() );
+            var countIn = parseInt(item.attr( "countIn" ));
+            var totalIn = item.attr("totalIn", parseInt(countIn + add) );
+            var countOut = parseInt(item.attr("countOut") );
+            var comp = parseInt(item.attr("comp") );
             var totalSold = totalIn - countOut - comp;
-            todo.attr( "editing", false );
+            item.attr( "editing", false );
         },
-        updateComp: function(todo, el){
-            todo.attr("comp", el.val());
-            countOut = parseInt(todo.attr( "countOut" ));
-            totalIn = parseInt(todo.attr( "totalIn" ));
-            totalSold = todo.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
-            gross = parseInt(todo.attr("totalSold") * parseInt(todo.attr("price")));
-            todo.attr( "gross", gross )
-            todo.attr("editing", false)
+        updateComp: function(item, el){
+            item.attr("comp", el.val());
+            countOut = parseInt(item.attr( "countOut" ));
+            totalIn = parseInt(item.attr( "totalIn" ));
+            totalSold = item.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
+            gross = parseInt(item.attr("totalSold") * parseInt(item.attr("price")));
+            item.attr( "gross", gross )
+            item.attr("editing", false)
         },
-        updateCountOut: function(todo, el){
-            todo.attr("countOut", el.val());
-            comp = parseInt(todo.attr( "comp" ));
-            totalIn = parseInt(todo.attr( "totalIn" ));
-            totalSold = todo.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
-            gross = parseInt(todo.attr("totalSold") * parseInt(todo.attr("price")));
-            todo.attr("totalSold", totalIn - comp - parseInt( el.val() ));
-            todo.attr("editing", false)
+        updateCountOut: function(item, el){
+            item.attr("countOut", el.val());
+            comp = parseInt(item.attr( "comp" ));
+            totalIn = parseInt(item.attr( "totalIn" ));
+            totalSold = item.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
+            gross = parseInt(item.attr("totalSold") * parseInt(item.attr("price")));
+            item.attr("totalSold", totalIn - comp - parseInt( el.val() ));
+            item.attr("editing", false)
         }
     },
     events: {
-        "{Todo} created": function(Todo, ev, newTodo){
-            this.scope.attr('todos').push(newTodo)
+        "{Merch} created": function(Merch, ev, newMerch){
+            this.scope.attr('items').push(newMerch)
         }
     }
 });
 
 can.Component.extend({
-    tag: "todos-app",
+    tag: "items-app",
     scope: {
-        todos: new Todo.List({}),
-        displayedTodos: function(){
+        items: new Merch.List({}),
+        displayedMerchs: function(){
             var filter = can.route.attr("filter")
             if(filter == "active"){
-                return this.attr('todos').remaining()
+                return this.attr('items').remaining()
             } else if(filter == "completed") {
-                return this.attr('todos').completed()
+                return this.attr('items').completed()
             } else {
-                return this.attr('todos')
+                return this.attr('items')
             }
         }
     },
@@ -178,15 +178,15 @@ can.Component.extend({
     events: {
         "#toggle-all click": function(el){
             var completed = el.prop("checked")
-            this.scope.attr('todos').each(function(todo){
-                todo.attr("completed", completed)
+            this.scope.attr('items').each(function(item){
+                item.attr("completed", completed)
             })
         }
     }
 })
 
 can.route.ready()
-var frag = can.view("todos-app-template",{})
+var frag = can.view("items-app-template",{})
 
 
 
