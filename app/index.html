@@ -31,6 +31,7 @@
     -->
 
     <!-- Page styles -->
+  
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
@@ -74,7 +75,7 @@
 </script>
 
 <script type='text/mustache' id='items-list-template'>
-<table id="item-list">
+<table id="item-list" class="g-wide-half">
   <tr>
       <th>Item name</th>
       <th> QTY Avail.</th>
@@ -96,24 +97,23 @@
         <span>{{name}} name</span>
       </td>
       <td>
-        <span class="grey">{{quantityAvailable}} quantity available</span> 
+        <span class="grey">{{quantityAvailable}}</span> 
      </td>
       
 
       <td>
-        <span class=view can-click='edit' id="countIn">{{countIn}} count in</span>
+        <span class="view" can-click='editCountIn' id="countIn">{{countIn}}</span>
       
       <input class="edit" 
              type="text" 
              value="{{countIn}}" 
-             
-             can-enter='updateCountIn'
-             >
+
+             can-enter='updateCountIn'>
       </td>
 
 
       <td >
-        <span class="view" can-click='edit' id=class="green">{{add}} add</span>
+        <span class="view" can-click='editAdd' id=class="green">{{add}}</span>
       
         <input class="edit" 
                type="text" 
@@ -124,14 +124,14 @@
       </td>
 
       <td>
-        <p class="green">{{totalIn}} total in</p>
+        <p class="green">{{totalIn}}</p>
       </td>
       
         
       
         
       <td>
-        <span class="view red" can-click='edit'>{{comp}} comp</span>
+        <span class="view red" can-click='edit'>{{comp}}</span>
      
         <input class="edit red" 
                type="text" 
@@ -142,7 +142,7 @@
       </td>
 
       <td >
-        <span class="view" can-click='edit'>{{countOut}} count out</span>
+        <span class="view" can-click='edit'>{{countOut}}</span>
       
         <input class="edit" 
           type="text" 
@@ -153,11 +153,11 @@
       </td>
       
       <td>
-        <span class="blue">{{totalSold}} total sold</span>
+        <span class="blue">{{totalSold}}</span>
       </td>
 
       <td>
-        <span class="blue">${{price}} price</span>
+        <span class="blue">${{price}}</span>
       </td>  
 
       <td>   

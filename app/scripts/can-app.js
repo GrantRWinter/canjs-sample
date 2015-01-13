@@ -89,7 +89,14 @@ can.Component.extend({
     tag: "items-list",
     template: can.view("items-list-template"),
     scope: {
-        edit: function(item){
+        edit: function() {
+            item.attr("editing", true)
+        },
+        editCountIn: function(item){
+            item.attr("editing", true);
+            this.item.attr("autofocus", true)
+        },
+        editAdd: function(item){
             item.attr("editing", true)
         },
         updateName: function(item, el){
