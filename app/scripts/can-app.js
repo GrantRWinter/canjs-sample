@@ -2,9 +2,9 @@ $(document).ready(function(){
         can.fixture({
     "GET /services/items": function(){
         return [
-            { id: 0, name: "Poster", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 0, comp: 0, countOut: 0,  totalSold: 0, price: 10, gross: 0, completed: false },
-            { id: 1, name: "Tee-shirt", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 9, comp: 0, countOut: 0,  totalSold: 0, price: 30, gross: 0, completed: false },
-            { id: 2, name: "Hoodie", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 8, comp: 0, countOut: 0,  totalSold: 0, price: 60, gross: 0, completed: false }
+            { id: 0, name: "Skate Poster", image: "/images/poster.jpg", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 0, comp: 0, countOut: 0,  totalSold: 0, price: 10, gross: 0, completed: false },
+            { id: 1, name: "AC/DC Tee-shirt", image: "/images/acdc.jpg", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 0, comp: 0, countOut: 0,  totalSold: 0, price: 35, gross: 0, completed: false },
+            { id: 2, name: "Weird Al Bobble Head", image: "/images/wa.jpg", quantityAvailable: 0, countIn: 0, add: 0, totalIn: 0, comp: 0, countOut: 0,  totalSold: 0, price: 30, gross: 0, completed: false }
         ]
     },
     "POST /services/items": function(){

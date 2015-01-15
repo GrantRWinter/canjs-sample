@@ -57,12 +57,12 @@
 
     </span>
     <span ><strong>{{ items.calculatedNumber }}</strong></span>
-    <ul id="filters">
+    <!--<ul id="filters">
     
       <li>{{{link "All" undefined}}}</li>
       <li>{{{link "Active" "active"}}}</li>
       <li>{{{link "Completed" "completed"}}}</li>
-    </ul>
+    </ul>-->
     <button id="clear-completed" 
         class="{{^items.completedCount}}hidden{{/items.completedCount}}",
         can-click="items.destroyCompleted">
@@ -75,10 +75,14 @@
 </script>
 
 <script type='text/mustache' id='items-list-template'>
-<table id="item-list" class="g-wide-half">
+
+<table id="item-list" class="g-wide--half ">
+
   <tr>
+      <th>Pic</th>
+      <th>Price</th>
       <th>Item name</th>
-      <th> QTY Avail.</th>
+      <th>QTY Avail.</th>
       <th>Count In</th>
       <th>Add</th>
       <th>Total In</th>
@@ -86,15 +90,20 @@
       <th>Count Out</th>
       <th>Total Sold</th>
       <th>Gross</th>
-      <th></th>
-      <th></th>
+     
     </tr>
   {{#items}}
+
     <tr class="item {{#completed}}completed{{/completed}} {{#editing}}editing{{/editing}}">
-      
+      <td>
+        <img src="{{image}}"  />
+      </td>
+      <td>
+        <span>${{price}}</span>
+      </td>
       
       <td>
-        <span>{{name}} name</span>
+        <span>{{name}}</span>
       </td>
       <td>
         <span class="grey">{{quantityAvailable}}</span> 
@@ -124,7 +133,7 @@
       </td>
 
       <td>
-        <p class="green">{{totalIn}}</p>
+        <span class="green">{{totalIn}}</span>
       </td>
       
         
@@ -156,9 +165,7 @@
         <span class="blue">{{totalSold}}</span>
       </td>
 
-      <td>
-        <span class="blue">${{price}}</span>
-      </td>  
+     
 
       <td>   
         <span>${{gross}}</span>
