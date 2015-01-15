@@ -92,7 +92,7 @@ can.Component.extend({
     template: can.view("items-list-template"),
     scope: {
         edit: function() {
-            item.attr("editing", true)
+            
         },
         editCountIn: function(item){
             item.attr("editing", true);

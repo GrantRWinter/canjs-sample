@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Can JS Test App</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-    <script src="jquery-circle-progress/dist/circle-progress.js"></script>
+    <script src="scripts/jquery-circle-progress/dist/circle-progress.js"></script>
     <script src="scripts/can.custom.js"></script>
     <script src="scripts/can-app.js"></script>
    
@@ -190,22 +190,17 @@
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td><div id="circle"></div></td>
 
   </tr>
 </table>
-<div id="circle"></div>
+
 
   
 </script>
+
 <script>
-  $('#circle').circleProgress({
-        value: 0.75,
-        size: 80,
-        fill: {
-            gradient: ["red", "orange"]
-        }
-    });
+  
 </script>
 <div id='app'></div>
   
