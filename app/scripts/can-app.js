@@ -19,6 +19,8 @@ $(document).ready(function(){
     "PUT /services/items/{id}": function(){
         return {}
     }
+
+
 });
 
 
@@ -138,12 +140,14 @@ can.Component.extend({
             item.attr("totalSold", totalIn - comp - parseInt( el.val() ));
             item.attr("editing", false)
         }
+
     },
     events: {
         "{Merch} created": function(Merch, ev, newMerch){
             this.scope.attr('items').push(newMerch)
         }
     }
+
 });
 
 can.Component.extend({
@@ -194,4 +198,8 @@ var frag = can.view("items-app-template",{})
 
 $("#app").append(frag);
 }); 
+
+
+
+
 
