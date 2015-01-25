@@ -43,6 +43,18 @@ Merch.List = can.Model.List.extend({
         })
         return items;
     },
+    
+    totalIn : function() {
+        array = [];
+        this.each(function(item) {
+            array.push( item.attr('totalIn'))
+        })
+        total = 0;
+        for (var i =0; i < array.length; i++){
+            total += array[i];
+        }
+        return total
+    },
     remainingCount: function(){
         return this.remaining().length;
     },
@@ -91,15 +103,22 @@ can.Component.extend({
     tag: "items-list",
     template: can.view("items-list-template"),
     scope: {
-        edit: function() {
-            
-        },
         editCountIn: function(item){
-            item.attr("editing", true);
-            this.item.attr("autofocus", true)
+            
+            item.attr("editingCountIn", true);
+            $('.edit-count-in').focus();
         },
         editAdd: function(item){
-            item.attr("editing", true)
+            item.attr("editingAdd", true);
+            $('.edit-add').focus();
+        },
+        editComp: function(item) {
+            item.attr("editingComp", true);
+            $('.edit-comp').focus();
+        },
+        editCountOut: function(item) {
+            item.attr("editingCountOut", true);
+            $('.edit-count-out').focus();
         },
         updateName: function(item, el){
             item.attr("name", el.val());
@@ -113,14 +132,15 @@ can.Component.extend({
             var countIn = item.attr("countIn", el.val());
             var add = item.attr( "add" );
             var totalIn = item.attr("totalIn", parseInt(el.val()) + parseInt(add) );
-            item.attr("editing", false)
+            item.attr("editingCountIn", false);
+
         },
         updateAdd: function(item, el){
             var add = item.attr( "add", el.val() );
             var countIn = parseInt(item.attr( "countIn" ));
             var totalIn = item.attr("totalIn", parseInt(el.val()) + parseInt(countIn) );
             
-            item.attr( "editing", false );
+            item.attr( "editingAdd", false );
         },
         updateComp: function(item, el){
             item.attr("comp", el.val());
@@ -129,7 +149,7 @@ can.Component.extend({
             totalSold = item.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
             gross = parseInt(item.attr("totalSold") * parseInt(item.attr("price")));
             item.attr( "gross", gross )
-            item.attr("editing", false)
+            item.attr("editingComp", false);
         },
         updateCountOut: function(item, el){
             item.attr("countOut", el.val());
@@ -138,9 +158,9 @@ can.Component.extend({
             totalSold = item.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
             gross = parseInt(item.attr("totalSold") * parseInt(item.attr("price")));
             item.attr("totalSold", totalIn - comp - parseInt( el.val() ));
-            item.attr("editing", false)
-        }
-
+            item.attr("editingCountOut", false);
+        },
+        
     },
     events: {
         "{Merch} created": function(Merch, ev, newMerch){
@@ -163,7 +183,8 @@ can.Component.extend({
             } else {
                 return this.attr('items')
             }
-        }
+        },
+    
     },
     helpers: {
         plural : function(word, num){
