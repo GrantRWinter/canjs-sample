@@ -44,13 +44,35 @@ Merch.List = can.Model.List.extend({
         return items;
     },
     
-    totalIn : function() {
+    totalInTotal: function() {
         array = [];
         this.each(function(item) {
             array.push( item.attr('totalIn'))
         })
         total = 0;
-        for (var i =0; i < array.length; i++){
+        for(var i=0; i < array.length; i++){
+            total += array[i];
+        }
+        return total
+    },
+    compTotal: function() {
+        array = [];
+        this.each(function(item) {
+            array.push( parseInt(item.attr('comp')) )
+        });
+        total = 0;
+        for(var i=0; i < array.length; i++) {
+            total += array[i];
+        }
+        return total
+    },
+    countOutTotal: function() {
+        array = [];
+        this.each(function(item) {
+            array.push( parseInt(item.attr('countOut')) )
+        });
+        total = 0;
+        for(var i=0; i < array.length; i++) {
             total += array[i];
         }
         return total
@@ -79,7 +101,7 @@ Merch.List = can.Model.List.extend({
             item.destroy()
         })
     }
-})
+});
 
 
 can.Component.extend({
@@ -98,6 +120,8 @@ can.Component.extend({
         }
     }
 });
+
+
 
 can.Component.extend({
     tag: "items-list",
