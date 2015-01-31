@@ -89,160 +89,139 @@
 <script type='text/mustache' id='items-list-template'>
 <div class="clear">
 <table id="item-list" class="g-wide--half ">
-
   <tr>
-      <th>Pic</th>
-      <th>Price</th>
-      <th>Item name</th>
-      <th>QTY Avail.</th>
-      <th>Count In</th>
-      <th>Add</th>
-      <th>Total In</th>
-      <th>Comp</th>
-      <th>Count Out</th>
-      <th>Total Sold</th>
-      <th>Gross</th>
-     
-    </tr>
+    <th>Pic</th>
+    <th>Price</th>
+    <th>Item name</th>
+    <th>QTY Avail.</th>
+    <th>Count In</th>
+    <th>Add</th>
+    <th>Total In</th>
+    <th>Comp</th>
+    <th>Count Out</th>
+    <th>Total Sold</th>
+    <th>Gross</th>
+  </tr>
   {{#items}}
 
-    <tr class="item {{#completed}}completed{{/completed}} {{#editing}}editing{{/editing}}">
-      <td>
-        <img src="{{image}}"  />
-      </td>
-      <td>
-        <span>${{price}}</span>
-      </td>
+  <tr class="item {{#completed}}completed{{/completed}} {{#editing}}editing{{/editing}}">
+    <td>
+      <img src="{{image}}"  />
+    </td>
+    <td>
+      <span>${{price}}</span>
+    </td>
+    
+    <td>
+      <span>{{name}}</span>
+    </td>
+    <td>
+      <span class="grey">{{quantityAvailable}}</span> 
+   </td>
       
-      <td>
-        <span>{{name}}</span>
-      </td>
-      <td>
-        <span class="grey">{{quantityAvailable}}</span> 
-     </td>
-      
+  <td class="view {{#editingCountIn}}editing-count-in{{/editingCountIn}}" can-click='editCountIn' id="countIn">
+    <span>{{countIn}}</span>
+    <input class="edit" 
+           type="text" 
+           value="{{countIn}}" 
+           can-enter='updateCountIn'
+           can-blur='updateCountIn'
+           can-mouseleave='updateCountIn'>
 
-      <td class="view {{#editingCountIn}}editing-count-in{{/editingCountIn}}" can-click='editCountIn' id="countIn">
+    <input class="edit-count-in"
+           type="text"
+           value="{{countIn}}"
+           can-enter='updateCountIn'>
+    </td>
 
-      <span>{{countIn}}</span>
-        
-      
-      <input class="edit" 
+    <td class="view {{#editingAdd}}editing-add{{/editingAdd}}" can-click='editAdd'>
+      <span>{{add}}</span>
+    
+      <input class="edit-add" 
              type="text" 
-             value="{{countIn}}" 
+             value="{{add}}" 
+             can-blur='updateAdd'
+             can-enter='updateAdd'
+             can-mouseleave='updateAdd'>
+    </td>
 
-             can-enter='updateCountIn'
-             can-blur='updateCountIn'
-             can-mouseleave='updateCountIn'>
-
-      <input class="edit-count-in"
-             type="text"
-             value="{{countIn}}"
-             can-enter='updateCountIn'>
-      </td>
-
-
-      <td class="view {{#editingAdd}}editing-add{{/editingAdd}}" can-click='editAdd'>
-        <span>{{add}}</span>
-      
-        <input class="edit-add" 
-               type="text" 
-               value="{{add}}" 
-               can-blur='updateAdd'
-               can-enter='updateAdd'
-               can-mouseleave='updateAdd'>
-      </td>
-
-      <td  id="total-in" class="green">
-        <span>{{totalIn}}</span>
-      </td>
-      
-        
-      
-        
-      <td class="view red {{#editingComp}}editing-comp{{/editingComp}}" can-click='editComp'>
-        <span>{{comp}}</span>
+    <td  id="total-in" class="green">
+      <span>{{totalIn}}</span>
+    </td>
      
-        <input class="edit-comp red" 
-               type="text" 
-               value="{{comp}}" 
-               can-blur='updateComp'
-               can-enter='updateComp'
-               can-mouseleave="updateComp">
-      </td>
+    <td class="view red {{#editingComp}}editing-comp{{/editingComp}}" can-click='editComp'>
+      <span>{{comp}}</span>
+   
+      <input class="edit-comp red" 
+             type="text" 
+             value="{{comp}}" 
+             can-blur='updateComp'
+             can-enter='updateComp'
+             can-mouseleave="updateComp">
+    </td>
 
-      <td class="view {{#editingCountOut}}editing-count-out{{/editingCountOut}}" can-click='editCountOut'>
-        <span>{{countOut}}</span>
-      
-        <input class="edit-count-out" 
-          type="text" 
-          value="{{countOut}}" 
-          can-blur='updateCountOut'
-          can-enter='updateCountOut'
-          can-mouseleave="updateCountOut">
-      </td>
-      
-      <td>
-        <span class="blue">{{totalSold}}</span>
-      </td>
+    <td class="view {{#editingCountOut}}editing-count-out{{/editingCountOut}}" can-click='editCountOut'>
+      <span>{{countOut}}</span>
+    
+      <input class="edit-count-out" 
+        type="text" 
+        value="{{countOut}}" 
+        can-blur='updateCountOut'
+        can-enter='updateCountOut'
+        can-mouseleave="updateCountOut">
+    </td>
+    
+    <td>
+      <span class="blue">{{totalSold}}</span>
+    </td>
 
-     
-
-      <td>   
-        <span>${{gross}}</span>
-      </td> 
-      
-      <td>  
-      <button class="destroy"
-            can-click="destroy"></button>
-      </td>      
-    </tr>
+    <td>   
+      <span>${{gross}}</span>
+    </td> 
+    
+    <td>  
+    <button class="destroy"
+          can-click="destroy"></button>
+    </td>      
+  </tr>
   {{/each}}
-
-    <div>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td><button class="button--secondary">More</button></td>
-          <td></td>
-          <td>{{ items.totalInTotal }}</td>
-          <td>{{ items.compTotal }}</td>
-          <td>{{ items.countOutTotal }}</td>
-          <td>{{ items.totalAsPercent }}% </td>
-          <td>
-            
-          </td>
-
-
-
-        </tr>
-
-  
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button class="button--secondary">More</button></td>
+    <td></td>
+    <td>{{ items.totalInTotal }}</td>
+    <td>{{ items.compTotal }}</td>
+    <td>{{ items.countOutTotal }}</td>
+    <td>{{ items.totalAsPercent }}% </td>
+    <td></td>
+  </tr>
 </table>
 </div>
 <div class="clear">
 Total Sold = {{items.totalSoldTotal}}
 Total In = {{ items.totalInTotal }}
 Total as Percent = {{ items.totalAsPercent }}
-<div class="radial-progress" data-progress="{{items.totalAsPercent}}">
-              <div class="circle">
-                <div class="mask full">
-                  <div class="fill"></div>
-                </div>
-                <div class="mask half">
-                  <div class="fill"></div>
-                  <div class="fill fix"></div>
-                </div>
-                <div class="shadow"></div>
-              </div>
-              <div class="inset">
-                <div class="percentage">
-                  <div>{{items.totalSoldTotal}} </div>
-                </div>
-              </div>
-            </div>
-</div>
+  <div class="radial-progress" data-progress="{{items.totalAsPercent}}">
+      <div class="circle">
+        <div class="mask full">
+          <div class="fill"></div>
+        </div>
+        <div class="mask half">
+          <div class="fill"></div>
+          <div class="fill fix"></div>
+        </div>
+        <div class="shadow"></div>
+      </div>
+      <div class="inset">
+        <div class="percentage">
+          <div>{{items.totalSoldTotal}} </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {{items.totalSoldTotal}}
 
