@@ -77,6 +77,23 @@ Merch.List = can.Model.List.extend({
         }
         return total
     },
+    totalSoldTotal: function() {
+        total = 0;
+        total = this.totalInTotal() - (this.compTotal() + this.countOutTotal());
+        return total;
+    },
+    totalAsPercent: function() {
+       percent = 0;
+       totalSold = this.totalSoldTotal();
+       totalIn = this.totalInTotal();
+
+       if (totalSold > 0) {
+         percent = totalSold / totalIn * 100
+       } else {
+         percent = 0
+       }
+       return percent
+    },
     remainingCount: function(){
         return this.remaining().length;
     },
@@ -179,9 +196,9 @@ can.Component.extend({
             item.attr("countOut", el.val());
             comp = parseInt(item.attr( "comp" ));
             totalIn = parseInt(item.attr( "totalIn" ));
-            totalSold = item.attr("totalSold", totalIn - countOut - parseInt( el.val() ));
+            totalSold = item.attr("totalSold", totalIn - comp - parseInt( el.val() ));
             gross = parseInt(item.attr("totalSold") * parseInt(item.attr("price")));
-            item.attr("totalSold", totalIn - comp - parseInt( el.val() ));
+            item.attr('gross', gross);
             item.attr("editingCountOut", false);
         },
         
