@@ -92,7 +92,7 @@ Merch.List = can.Model.List.extend({
        } else {
          percent = 0
        }
-       return percent
+       return parseInt(percent)
     },
     remainingCount: function(){
         return this.remaining().length;
